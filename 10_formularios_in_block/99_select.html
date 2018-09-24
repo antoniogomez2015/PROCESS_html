@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>selects</title>
+</head>
+
+<body>
+
+	<!--
+
+	Select:
+	_______
+
+	_un <select>, nos permitirá crear un sistema de selección de opciones ante el usuario los cuáles, podremos utilizar para capturar información a través, de programación, otros 
+
+	Referencia: https://www.w3schools.com/tags/tag_select.asp
+
+
+
+
+	Atributos Disponibles para Select:
+	__________________________________
+
+	_éstos son los atributos diponibles para la tag, <select>, los cuáles son:
+
+
+		_atributo: autofocus  Valor: "autofocus"
+
+		_atributo: disabled   Valor: "disabled"
+
+		_atributo: form       Valor: "form_id"
+
+		_atributo: multiple   Valor: "multiple", tamaño y scroll para la caja
+
+		_atributo: name       Valor: "name"
+
+		_atributo: required   Valor: "required"
+
+		_atributo: size       Valor: "number", tamaño de la caja, con el atributo "multiple"
+
+
+	-->
+
+	<form action="" name="productos" id="proof">
+		
+	</form>
+
+		<select name="demo" size="5" required="required" multiple size="4" form="proof" autofocus="autofocus">
+
+			<optgroup label="Autos Americanos">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+			</optgroup>
+
+			<optgroup label="Autos Europeos">
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+			</optgroup>
+
+		</select>
+
+
+		<select name="demo" size="5" required="required" form="proof">
+
+			<option value="volvo"><div style="width: 50px; height:10px; background-color: red; margin-bottom: 5px;"></div></option>
+			<option value="saab" <div style="width: 50px; height:10px; background-color: yellow; margin-bottom: 5px;"></div></option>
+			<option value="mercedes" <div style="width: 50px; height:10px; background-color: purple; margin-bottom: 5px;"></div></option>
+			<option value="audi" <div style="width: 50px; height:10px; background-color: brown; margin-bottom: 5px;"></div></option>
+
+		</select>
+	
+</body>
+</html>

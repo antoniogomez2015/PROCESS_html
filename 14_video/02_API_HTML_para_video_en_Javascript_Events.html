@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframes</title>	
+
+</head>
+
+<!--
+
+	API de Video en Javascript:
+	___________________________
+
+	_en html5, dispondremos de una API, preconstruida de javascript, a través, de la cuál, podremos controlar todas las acciones del video de forma avanzada por medio de javascript
+
+
+
+	Referencia:
+
+		https://www.w3schools.com/tags/ref_av_dom.asp
+			https://www.w3.org/2010/05/video/mediaevents.html
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Eventos:
+	________
+
+	_los eventos nos permitirán crear triggers, ó disparadores de acciones de cara a la API, HTML5, para audio y video
+
+	_de ésta manera, dispondremos de una serie de eventos para la mayoría de casos y acciones disponibles en la api, html5, para audio y video
+
+	_de ésta manera, a continuación presentamos un ejemplo del llamado ó ejecución de un evento:
+
+		<body>
+
+			<video id="myVideo" width="320" height="176" controls>
+			  <source src="mov_bbb.mp4" type="video/mp4">
+			  <source src="mov_bbb.ogg" type="video/ogg">
+			  Your browser does not support HTML5 video.
+			</video>
+
+		</body>
+
+
+		<scripts type="text/javascript">
+
+			var vid = document.getElementById("myVideo");
+
+			vid.oncanplay = function() {
+			    alert("Can start playing video");
+			};
+
+		</scripts>
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	HTML Audio/Video Events:
+	________________________
+
+	Event:                     Description:
+	______                     ____________
+
+	abort                      Fires when the loading of an audio/video is aborted
+
+	canplay                    Fires when the browser can start playing the audio/video
+
+	canplaythrough             Fires when the browser can play through the audio/video witho...
+
+	durationchange             Fires when the duration of the audio/video is changed
+
+	emptied                    Fires when the current playlist is empty
+
+	ended                      Fires when the current playlist is ended
+
+	error                      Fires when an error occurred during the loading of an audio/video
+
+	loadeddata                 Fires when the browser has loaded the current frame of the aud...
+
+	loadedmetadata             Fires when the browser has loaded meta data for the audio/video
+
+	loadstart                  Fires when the browser starts looking for the audio/video
+
+	pause                      Fires when the audio/video has been paused
+
+	play                       Fires when the audio/video has been started or is no longer paused
+
+	playing                    Fires when the audio/video is playing after having been paused ...
+
+	progress                   Fires when the browser is downloading the audio/video
+
+	ratechange                 Fires when the playing speed of the audio/video is changed
+
+	seeked                     Fires when the user is finished moving/skipping to a new positio..
+
+	seeking                    Fires when the user starts moving/skipping to a new position ...
+
+	stalled                    Fires when the browser is trying to get media data, but data...
+
+	suspend                    Fires when the browser is intentionally not getting media data
+
+	timeupdate                 Fires when the current playback position has changed
+
+	volumechange               Fires when the volume has been changed
+
+	waiting                    Fires when the video stops because it needs to buffer the ne...
+
+	
+
+-->
+
+
+
+
+<body>	
+
+
+	<!--forma directa para navegadores actuales-->
+	<video src="../00_audio_y_video/proof.mp4" width="70%" id="video">Tu navegador no soporta Video HTML5</video>
+
+	<!--botones para controlar reproducción del video-->
+	<button onclick="play()">Play</button>
+
+	<button onclick="stop()">Pause</button>
+
+		
+</body>
+
+<script type="text/javascript">
+
+	//seleccionamos y guardamos el elemento html, de tipo "video
+	var video = document.getElementById('video');
+
+	//para a continuación hacer uso de la API, HTML5, para audio y video "properties"
+	video.controls = false;
+
+	video.autoplay = false;
+
+	video.poster = "../00_img_referencia/desktop.jpg";
+
+
+	//funciones para reproducir y detener la reproducicón de video haciendo uso de los "métodos", de la API, HTML5, para audio y video
+	function play(){
+		video.play();
+	}
+
+	function stop(){
+		video.pause();
+	}
+
+</script>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tables</title>
+
+	<style type="text/css">
+
+		table{
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 5%;
+			border-collapse: collapse;
+		}
+
+			td{
+				border: 1px solid black;
+				line-height: 1.5;
+				text-align: center;
+			}
+
+			tr:hover{
+				background-color: grey;
+			}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!--
+
+
+		Unir Celdas Paralelas:
+		______________________
+
+		_tenemos la posibilidad de unir ó fusionar celdas paralelas en una tabla html, para que así, una celda pueda ocupar más un espacio de su propio alto y posición natural para que así, cada celda pueda ocupar el espacio de una, dos, tres, ó más campos a la columna a la cuál, pertenece y a su vez,de la tabla en general
+
+		_para lo cuál, disponemos del atributo:
+
+			_rowspan
+
+
+		_entendiéndo así, que el atributo rowspan="", es un atributo de los elementos ó tags:
+
+			_<tr>
+
+			_<th>
+
+
+		_de ésta manera, podremos crear columnas como una sóla celda la cuál, ocupará todo el alto de la parte ó de forma parcial en relación a nuestras necesidades
+
+
+		NOTA: y al igual que el atributo "colspan", el atributo rowspan, requerirá que eliminemos las celdas que ya no serán utilizadas ya que éstos espacios serán utilizados por celdas fusionadas verticalmente ha modo de columna
+
+
+
+
+
+
+	-->
+
+
+	<table>
+
+		<thead>
+
+			<tr>
+				
+				<th>Nombre</th>
+
+				<th>Apellido</th>
+
+				<th>Cargo</th>
+
+			</tr>			
+
+		</thead>
+
+
+		<tfoot>
+			
+			<tr>
+				
+				<td colspan="2">Total:</td>				
+
+				<td>Tres Empleados</td>
+
+			</tr>
+
+		</tfoot>
+
+
+		<tbody>
+
+			<tr>
+				
+				<td rowspan="2">José</td>
+
+				<td>Gomez</td>
+
+				<td>Gerente</td>			
+
+			</tr>
+
+			<tr>
+				
+				<!--ésta celda debe de ser eliminada para compenzar la misma cantidad de celdas-->
+				<!--<td>Alberto</td>-->
+
+				<td>Jimenez</td>
+
+				<td>Consultor</td>
+				
+			</tr>
+
+			<tr>
+
+				<td>Maria</td>
+
+				<td>Perez</td>
+
+				<td>Jefe de Planta</td>
+				
+			</tr>			
+
+		</tbody>
+
+		
+		
+		
+
+	</table>
+	
+</body>
+</html>

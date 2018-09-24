@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input</title>
+</head>
+<body>
+	
+	<!--
+
+		
+
+
+	Input Type Search:
+	__________________
+
+	_el tag, <input>, nos permitirá crear un campo de entrada de datos de tipo búsqueda para que así, el usuario pueda hacer búsquedas filtradas de elementos, productos y servicios así, como de características específicas, otros
+
+	_para que luego éstos datos puedan ser capturados vía programación
+
+
+	_referencia:
+
+			https://www.w3schools.com/jsref/dom_obj_search.asp
+
+
+
+
+	Properties para Input Type Search:
+	__________________________________
+
+
+		_proper: autocomplete   Descrip: "Sets or returns the value of the autocomplete attribute of a number field"
+
+
+		_proper: autofocus  Descrip: "Sets or returns whether an input image should automatically get focus when the page loads"
+
+
+		_proper: defaultValue   Descrip: "Sets or returns the default value of an input image"
+
+
+		_proper: disabled   Descrip: "Sets or returns whether an input image is disabled, or not"
+
+
+		_proper: form   Descrip: "Returns a reference to the form that contains the input image"
+
+
+		_proper: list  Descrip: "Returns a reference to the datalist that contains the search field"
+
+
+		_proper: maxLength   Descrip: "Sets or returns the value of the maxlength attribute of a search field"
+
+
+		_proper: name   Descrip: "Sets or returns the value of the name attribute of a number field"
+
+
+		_proper: pattern   Descrip: "Sets or returns the value of the pattern attribute of a password field"
+
+
+		_proper: readOnly   Descrip: "Sets or returns whether the number field is read-only, or not"
+
+
+		_proper: required   Descrip: "Sets or returns whether the number field must be filled out before submitting a form"
+
+
+		_proper: size   Descrip: "Sets or returns the value of the size attribute of a password field"
+
+
+		_proper: type   Descrip: "Returns which type of form element the number field is"
+
+
+		_proper: value   Descrip: "Sets or returns the value of the value attribute of a number field"
+
+
+
+
+
+
+
+	-->	
+
+	<input id="image" type="search">
+
+
+	<!--
+
+		_también, dispondremos de una opciones en la cuál, podremos relacionar un campo de búsqueda con una página externa, como por ejemplo google
+
+		_de ésta manera, podremos exportar búsquedas desde nuestra página hasta google, de parte del usuario, ej:
+
+	-->
+
+	<form action="http://www.google.com/search" method="get">
+	
+		<input type="text" placeholder="search" name="q">	
+
+	</form>
+
+
+</body>
+</html>

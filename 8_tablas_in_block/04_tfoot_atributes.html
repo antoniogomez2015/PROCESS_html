@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tables</title>
+
+	<style type="text/css">
+
+		table{
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 5%;
+			border-collapse: collapse;
+		}
+
+			td{
+				border: 1px solid black;
+				line-height: 1.5;
+				text-align: center;
+			}
+
+			tr:hover{
+				background-color: grey;
+			}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!--
+
+
+		Atributos del pie Grupal de las Tablas HTML:
+		____________________________________________
+
+		_el pie de la tabla dispone de los siguientes atributos:
+
+
+			Referencia: 
+
+					https://www.w3schools.com/tags/tag_tfoot.asp
+
+
+
+			_atrib:  align   Value: "right left center justify char"   Descrip: "Aligns the content inside the <thead> element"
+
+
+			_atrib: char   Value: "character"   Descrip: "Aligns the content inside the <thead> element to a character"
+
+
+			_atrib: charoff   Value: "number"   Descrip: "Sets the number of characters the content inside the <tfoot> element will be aligned from the character specified by the char attribute"
+
+
+			_atrib: valign   Value: "Vertical aligns the content inside the <tfoot> element"
+
+
+		
+
+
+
+
+
+	-->
+
+
+	<table>
+
+		<thead>
+
+			<tr>
+				
+				<th>Nombre</th>
+
+				<th>Apellido</th>
+
+				<th>Cargo</th>
+
+			</tr>			
+
+		</thead>
+
+
+		<tfoot>
+			
+			<tr>
+				
+				<td>Total:</td>
+
+				<td></td>
+
+				<td>Tres Empleados</td>
+
+			</tr>
+
+		</tfoot>
+
+
+		<tbody>
+
+			<tr>
+				
+				<td>José</td>
+
+				<td>Gomez</td>
+
+				<td>Gerente</td>			
+
+			</tr>
+
+			<tr>
+
+				<td>Alberto</td>
+
+				<td>Jimenez</td>
+
+				<td>Consultor</td>
+				
+			</tr>
+
+			<tr>
+
+				<td>Maria</td>
+
+				<td>Perez</td>
+
+				<td>Jefe de Planta</td>
+				
+			</tr>			
+
+		</tbody>
+
+		
+		
+		
+
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input</title>
+
+	<script type="text/javascript">
+		
+		var x = document.createElement("INPUT");
+		x.setAttribute("type", "datetime");
+
+	</script>
+
+</head>
+<body>
+	
+	<!--
+
+
+
+	Input Type DateTime:
+	____________________
+
+	_el tag, <input>, nos permitirá crear un campo de entrada de datos de tipo fechas para que así, el usuario pueda indicar un fecha en el tiempo determinado de forma específica
+
+	_de ésta manera, el usuario podrá indicar el día, el mes y el año
+
+	_así, el usuario podrá indicar cada parte de la fecha conpleta de forma manual ó a través, de un selector más completo en el cuál, podrá avanzar entre los meses, años y días de forma más gráfica y visual
+
+
+	_lo cuál, es especialmente útil para crear calendarios ó para indicar fechas de nacimiento ó fechas de entrgas ó de pagos, otros
+
+
+	NOTA: ésta opción sólo está disponible para ser creada vía javascript,
+
+		_document.createElement() method:
+
+
+		var x = document.createElement("INPUT");
+		x.setAttribute("type", "datetime");
+
+	
+	
+
+	_referencia:
+
+			https://www.w3schools.com/jsref/dom_obj_datetime.asp
+
+
+
+
+	Properties para Input Type DateTime:
+	____________________________________
+
+
+		_proper: autocomplete   Descrip: "Sets or returns the value of the autocomplete attribute of a color picker"
+
+
+		_proper: autofocus   Descrip: "Sets or returns whether a color picker should automatically get focus when the page loads"
+
+
+		_proper: defaultValue   Descrip: "Sets or returns the default value of a color picker"
+
+
+		_proper: disabled   Descrip: "Sets or returns whether a color picker is disabled, or not"
+
+
+		_proper: form   Descrip: "Returns a reference to the form that contains the color picker"
+
+
+		_proper: list   Descrip: "Returns a reference to the <datalist> element that contains the color picker"
+
+
+		_proper: name   Descrip: "Sets or returns the value of the name attribute of a color picker"
+
+
+		_proper: type   Descrip: "Returns which type of form element the color picker is"
+
+
+		_proper: value   Descrip: "Sets or returns the value of the value attribute of a color picker"
+
+
+
+
+	Métodos para Input Type Date:
+	_____________________________
+
+
+		_metodo: stepDown()   Descrip: "Decrements the value of the date field by a specified number"
+
+
+		_metodo: stepUp()   Descrip: "Increments the value of the date field by a specified number"
+
+
+
+	-->
+
+
+	<form>
+
+	  <fieldset>
+
+	    <legend>Personalia:</legend>
+
+	    	<label for="demo" name="proof">Selecciones: </label>
+
+	   			<input type="datetime" id="demo" value="Responder"><br>
+	    		Email: <input type="text"><br>
+	    		Date of birth: <input type="text">
+
+	  </fieldset>
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EMMET</title>
+</head>
+<body>
+
+<!--
+
+	Tutorial:
+
+		Tutorial de emmet
+
+			https://www.youtube.com/watch?v=rP-K62mbUm0
+
+
+
+	Emmet:
+	______
+
+	_emmet, nos permite ayudas para la generación html, lo cuál, aumenta las prestaciones de los editores de texto como de ides
+
+
+	Elementos en Cascada:
+	_____________________
+
+	_éstos son los elementos ó etiquetas que estarán representadas unas dentro de otras para lo cuál, debemos de utilizar la siguiente nomenclatura para su definición a través, de emmet, ésta es: ">", ej:
+
+
+		h2>p>a + tab
+
+
+	Elementos Hermanos:
+	___________________
+
+	_éstos son los elementos ó etiquetas que serán representados al mismo nivel de identación, para lo cuál, debemos de utilizar la siguiente nomenclatura para su definición a través, de emmet, ésta es: "+", ej:
+
+
+		h2+h3>p>a + tab
+
+
+	Subir de Nivel:
+	_______________
+
+	_también, podremos crear estructuras complejas para incluso en declaraciones complicadas poder hasta subir de nivel, para lo cuál, debemos de hacer uso de la nomenclatura de: "^", ej:
+
+
+		header>nav>ul>li^div + tab
+
+		_de ésta manera, el div, se creará al nivel del "ul", y no al nivel del "li"
+
+		_incluso podríamos colocar el símbolo "^", varias veces para subir así, más de un nivel a la vez, ej: "^^^"
+
+
+	Replicas de Elementos:
+	______________________
+
+	_también, podremos hacer replicas ó múltiples instancias de un elemento html, para lo cuál, debemos de hacer de la nomenclatura de: "*", ej:
+
+
+		ul>li*10>a + tab
+
+		_de ésta manera, los elementos de tipo <li>, serán reprentados 10, veces, y éstos a su vez, contendrán cada uno de éstos una etiqueta <a>
+
+
+	Agrupar Elementos:
+	__________________
+
+	_también, tenemos la posibilidad de estructurar bloques independientes unos de otros lo cuál, nos pemritirá no tener que estar subiendo niveles, para lo cuál, debemos de utilizar la nomenclatura a través, de paréntesis: "()", ha modo de operaciones aritméticas para que así, el contenido que se encuentre dentro de los paréntesis deba de resilverse primero para pasar al siguiente elemento ó bloque de contenido, ej:
+
+
+		header>(nav>ul>li)+div + tab
+
+		_de ésta manera, el "<div>", se colocará el mismo nivel que la etiqueta "nav"
+
+
+	Clases y Identificadores:
+	_________________________
+
+	_así, como también, a la expresión le podemos indicar ó agregar tanto clases como identificadores de elementos html, a través, tanto del símbolo ".", como del "#", ej:
+
+
+		header.encabezado>nav>ul>li>a + tab
+
+		header#encabezado>nav>ul>li>a
+
+
+	Agregar Atributos:
+	__________________
+
+	_también, tendremos la posibilidad de agregar atributos a etiquetas ó tags, para lo cuál, debemos de hacer el los símbolos: "[]", ej:
+
+		ul[type="circle"]>li.proof-$*10>a + tab
+
+
+	Iteraciones de Elementos:
+	_________________________
+
+	_también, tendremos la posibilidad de iterar elementos ó agregarle ha éstos valores incrementales cuando éstos son instanciados, para lo cuál, debemos de hacer uso de la variable "$", precedida de un guión "-", ej:
+
+		ul[type="circle"]>li.proof-$*10>a + tab
+
+	_más también, tendremos la posibilidad de iterar elementos de forma inversa ó invertida, para lo cuál, debemos de hacer de los símbolos: "-$@-", ej:
+
+		ul[type="circle"]>li.proof-$@-*10>a + tab
+
+	_incluso tendremos la posibilidad de hacer que la iteración comience a partir de un número personaliado, para lo cuál, debemos de hacer de igualmente del símbolo: "@", más el número ó índice a partir del cuál, deseamos que comience el conteo respectivo, ej:
+
+		ul[type="circle"]>li.proof-$@5*10>a + tab
+
+
+	Agregar Contenido ó Texto:
+	__________________________
+
+	_tenemos también, la posibilidad de agregar texto ó contenido dentro de la misma expresión para que así, éste se replique para las instancias ha crear de los diferentes elementos html, para lo cuál, debemos hacer uso de los símbolos de: "{}", ej:
+
+
+		ul[type="circle"]>li.proof-$*10>a{hola mundo-$}
+
+
+
+-->
+
+		
+	
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframes</title>	
+
+</head>
+
+<!--
+
+	Video:
+	______
+
+	_dispones de dos formas de incorporar video en html5, en la cuál, podremos cargar video de una manera simple y de una manera más soportadas para navegadores más antiguos
+
+
+
+	Referencia:
+
+		https://www.w3schools.com/tags/tag_video.asp
+
+
+
+	Attributes:
+	___________
+
+	Attribute          Value                    Description
+	_________          _____                    ___________
+
+	autoplay           autoplay                 reproducción automática
+
+	controls           controls                 controles de reproducción visibles
+
+	poster             URL                      especifica una imágen de precarga
+
+	loop               loop                     reproducción idefinida
+
+	muted              muted                    silenciar audio
+
+	preload            auto, metadata, none     precarga de audio
+
+	src                URL                      especifica la ruta del archivo de audio
+
+	width              pixels                   especifica ancho del video
+
+	height             pixels                   especifica alto del video    
+
+
+
+-->
+
+
+
+
+<body>
+
+	<!--forma con soporte a navegadores antiguos-->
+	<video width="320" height="240" controls>
+
+	  <source src="movie.mp4" type="video/mp4">
+	  <source src="movie.mp4" type="video/mp4">
+	  <source src="movie.webm" type="video/webm">
+
+	  <p>Your browser does not support the video tag.</p>
+
+	</video>
+
+
+	<!--forma directa para navegadores actuales-->
+	<video src="source/video/post.mp4">Tu navegador no soporta Video HTML5</video>
+
+	
+	
+</body>
+</html>

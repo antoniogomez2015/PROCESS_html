@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input</title>
+</head>
+<body>
+	
+	<!--
+
+		
+
+
+	Atributos Generales para Inputs:
+	________________________________
+
+	_tenemos la posibilidad de indicar atributos ganerales para la mayoría de inputs, y para la mayoría de casos, de ésta disponemos de los siguientes atributos más generales y usasdos:
+
+
+
+
+	_referencia:
+
+			https://www.w3schools.com/tags/tag_input.asp
+			https://www.w3schools.com/html/html_form_attributes.asp
+
+
+
+
+	Atributes:                       Descripción:
+	__________                       ____________
+
+	required                         campo requerido
+
+	disable                          campo desactivado
+
+	readonly                         campo de sólo lectura
+
+	checked                          checkbox marcado
+
+	selected                         opción de un select, esté seleccionado
+
+	multiple                         para que un select, admita múltiples options
+
+	autofocus                        para que un campo esté seleccionado por defecto
+
+	hidden                           para ocultar un campo ante el usuario
+
+	novalidate                       para no valodar un campo ó el formulario entero
+
+	accesskey                        atajo de teclado para activar un campo
+
+	maxlength                        longitud máxima permitida en un campo
+
+	minlength                        longitud mínima permitida en un campo
+
+	min                              valor numérico mínimo en un "range"
+
+	max                              valor numérico máximo en un "range"
+
+	step                             saltos de valor en un "range"
+
+	tabindex                         pasar de un campo ha otro en un orden específica a 	                                 través, del shortcut, tab
+
+	autocomplete                     éste recibe valores on/off, para indicar si 
+									 el navegador auto completará el formulario ó no
+
+	cols                             éste define el ancho por columnas de un textarea
+
+    rows                             éste define el alto por filas de un textarea 
+
+    size                             éste define el alto por filas para selects, múltiples
+
+    for                              éste conecta a un elemento lebel, con un elemento input
+
+    placeholder                      text sugerente ante el usuario en un campo ó input
+
+    type                             define el tipo de campo ó botón
+
+    action                           indica el destino del formulario
+
+    method                           indica como se envían los datos del formulario
+
+
+
+	-->	
+
+
+
+
+	<form>
+		
+		<label for="entrada">Seleccione:</label>
+
+		<input type="text" id="entrada" name="" list="autoComp">
+
+		<input type="submit" name="">
+
+		<datalist id="autoComp">
+			
+			<option value="Html">
+			<option value="Css">
+			<option value="Javascript">
+			<option value="Php">
+			<option value="NodeJs">
+			<option value="Django">
+
+		</datalist>
+
+	</form>
+
+</body>
+</html>

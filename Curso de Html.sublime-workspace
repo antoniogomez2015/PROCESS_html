@@ -1,0 +1,1357 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"auto",
+				"autoComp"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"data",
+				"datalist\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"on",
+				"onclick\tAttr"
+			],
+			[
+				"a",
+				"alternate"
+			],
+			[
+				"animation",
+				"animation-direction"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"ondr",
+				"ondragenter\tAttr"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"col",
+				"colgroup\tTag"
+			],
+			[
+				"th",
+				"thead\tTag"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"su",
+				"summary\tTag"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"menu",
+				"menu_fixed"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"colum",
+				"column-gap"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"default",
+				"defaultValue"
+			],
+			[
+				"au",
+				"autofocus"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"le",
+				"label\tTag"
+			],
+			[
+				"fot",
+				"font-family"
+			],
+			[
+				"type",
+				"type=\"square"
+			],
+			[
+				"ifr",
+				"iframe\tTag"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"mis",
+				"misIconos"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"ease",
+				"_ease-in"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"backgrou",
+				"background-attachment"
+			],
+			[
+				"for",
+				"form\tTag"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"ord",
+				"border"
+			],
+			[
+				"flex",
+				"flex-end"
+			],
+			[
+				"base",
+				"baseline"
+			],
+			[
+				"wa",
+				"wrap"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"ta",
+				"target\tAttr"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"page",
+				"page2"
+			],
+			[
+				"lies",
+				"list-style"
+			],
+			[
+				"magi",
+				"margin-left"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"borde",
+				"border-top"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"s",
+				"statusActive"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"new",
+				"newTime"
+			],
+			[
+				"ahora",
+				"ahoraMismo"
+			],
+			[
+				"sali",
+				"salida_T"
+			],
+			[
+				"año",
+				"añoActual"
+			],
+			[
+				"pr",
+				"proof2"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"valo",
+				"valorDeMiCubo"
+			],
+			[
+				"onmo",
+				"onmouseout\tAttr"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"upp",
+				"upper-roman"
+			],
+			[
+				"lo",
+				"lower-roman"
+			],
+			[
+				"o",
+				"upper-roman"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"cata",
+				"catalogo_L2_1"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"he",
+				"helvetica"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"grid",
+				"grid_inmuebles"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"bo",
+				"border-right"
+			],
+			[
+				"sli",
+				"slideUp"
+			],
+			[
+				"tag",
+				"tag_L1_bottom"
+			],
+			[
+				"sl",
+				"slow"
+			],
+			[
+				"slide",
+				"slideDown"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"se",
+				"section\tTag"
+			],
+			[
+				"en",
+				"enlace"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"re",
+				"repeat-y"
+			],
+			[
+				"rep",
+				"background-repeat"
+			],
+			[
+				"bode",
+				"border"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"ce",
+				"cerra_ventana"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"mi",
+				"miNuevoObjeto2"
+			],
+			[
+				"pla",
+				"platfrom"
+			],
+			[
+				"his",
+				"history"
+			],
+			[
+				"use",
+				"userMessage3"
+			],
+			[
+				"user",
+				"userMessage1"
+			],
+			[
+				"us",
+				"userMessage2"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"medi",
+				"media_sportSystem"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"sans",
+				"sans-serif"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"conta",
+				"containt"
+			],
+			[
+				"cont",
+				"containt"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "15_geolocalizacion/04_geolocalizacion_API_google_Maps.html",
+			"settings":
+			{
+				"buffer_size": 3492,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/Git/000_guia_de_uso_rapido_git.html",
+			"settings":
+			{
+				"buffer_size": 10939,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "3_etiquetas_para_texto_in_Line/29_Microdatos.html",
+			"settings":
+			{
+				"buffer_size": 5767,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"book",
+				"Bookmarks: Select Next"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"package control",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 446.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/web_y_programacion_v2/html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/web_y_programacion_v2/html/3_etiquetas_para_texto_in_Line"
+	],
+	"file_history":
+	[
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/web_y_programacion_v2/html/3_etiquetas_para_texto_in_Line/99_metadatos_en_html.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/web_y_programacion_v2/html/3_etiquetas_para_texto_in_Line/00_texto_formateado_generico.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/web_y_programacion_v2/html/01_font-face.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/web_y_programacion_v2/html/10_formularios_in_block/28_Form_endtype_attribute.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/15_geolocalizacion/02_geolocalizacion_methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/15_geolocalizacion/00_geolocalizacion_general.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/15_geolocalizacion/01_geolocalizacion_methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/00_canvas_general_ejemplos_base.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/18_Document_Object_Model_(DOM)_API/00_generales.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/17_navigator_API/00_generalidades.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/javascript/Media_Queries/Window.matchMedia().html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/10_formularios_in_block/21_atributos_generales_para_inputs.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/10_formularios_in_block/99_select.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/10_formularios_in_block/20_datalist_(autocompletado)_en_inputs.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/10_formularios_in_block/20_input_type_radio.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/10_formularios_in_block/22_input_type_search.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/14_video/02_API_HTML_para_video_en_Javascript_Events.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/14_video/02_API_HTML_para_video_en_Javascript.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/14_video/03_API_HTML_para_video_en_Javascript_Methds.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/14_video/04_API_HTML_para_video_en_Javascript_Properties.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html_precostruido/slideshow_html_y_css.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/Jquery_Preconstruido/Slide_manual_ infinito/slider_infinito.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html_precostruido/slideshow_html.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/12_drag_and_drop/02_atributos_html5_para_drag_and_drop.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/12_drag_and_drop/04_drag_and_drop_image_demo.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/Php_y_Mysql/0_general.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/12_drag_and_drop/03_API_html5_para_drag_and_drop.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/12_drag_and_drop/01_general_y_consideraciones.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/javascript/01_formas_y_formatos_de_agregar_javascript_en_html.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/99_iframe.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/javascript/01_formas_y_formatos_de_agregar_javascript_en_html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/10_Other_Methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/07_Image_Drawing_Methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/01_Colors, Gradient, Styles, and Shadows_Properties_y_methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/05_Transformations_Methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/03_Rectangles_Methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/04_Paths_Methods.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/02_Line_Style_Properties.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/11_canvas_y_graficos_in_block/canvas.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/9_images_in_block/06_map_y_area.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/9_images/99_imagenes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/9_images_in_block/05_picture_html.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/9_images/04_figure_html.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/9_images/03_img_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/9_images/01_tipos_y_formatos_de_imagenes_para_html.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/13_fusionar_celdas_paralelas_rowspan.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/999_tables.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/01_tables_estructuras.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/11_col_and_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/12_fusionar_celdas_contiguas_colspan.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/06_tr_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/08_td_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/05_tbody_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/04_tfoot_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/03_thead_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/02_atributos_de_las_tablas.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/8_tablas/99_fusionar_celdas_contiguas_colspan.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/7_listas/99_Li_Listas.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/7_listas/00_tipos_de_Listas.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/7_listas/03_Listas_dl.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/4_etiquetas_semanticas_in_Block/08_details_y_sumary_text.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/7_listas/03_Listas_del.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/7_listas/01_Listas_ul.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/7_listas/04_Listas_ul_atributes.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/7_listas/02_Listas_ol.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/27_input_type_week.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/12_input_type_email.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/23_input_type_submit.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/17_input_type_number.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/18_input_type_password.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/22_input_type_search.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/20_input_type_radio.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/19_input_type_range.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/18_input_type_search.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/13_input_type_file.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/14_input_type_hidden.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/21_input_type_reset.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html_precostruido/menu_pegajoso/menu_pegajoso.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/16_input_type_month.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/15_input_type_image.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/13_input_type_fileUpload.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/11_input_type_dateTimeLocal.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/9_input_type_date.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/8_input_type_color.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/8_input_type_dateTime.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/7_input_type_button.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/6_input_type_checkbox.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/14_input_type_image.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/12_input_type_fileUpload.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/11_input_type_email.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/10_input_type_dateTimeLocal.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/1_form.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/13_input_type_hidden.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/99_select.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/88_formularios/88_legend.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/PHP Preconstruido/carga_de_archivos_al_servidor_con_preloader/source/php/codigo.php",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/PHP Preconstruido/carga_de_archivos_al_servidor_con_preloader/source/js/desarrollo.js",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/PHP Preconstruido/carga_de_archivos_al_servidor_con_preloader/source/css/main.css",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/PHP Preconstruido/carga_de_archivos_al_servidor_con_preloader/carga_de_archivos.html",
+		"/C/xampp/htdocs/massivo/dev/scss/main.scss",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/06_Atributos_para_enlaces_generalidades.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/13_Atributos_media.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/14_Atributos_type.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/12_Atributos_hreflang.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/iframe.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/07_Atributos_href.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/04_Tipos_de_enlaces_ancla_o_marcadores.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/05_Tipos_de_enlaces_enlaces_externos.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/02_Tipos_de_enlaces_enlaces_ha_archivos.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/99_rutas_y_relacionamiento/01_Rutas_y_relacionamientos.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/99_rutas_relativas/01_Rutas.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/6_enlaces_atributos_in_line/01_Estructuras_y_tipos_de_Links.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/30_Microdatos_Thing_Cosas_en_general.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/9999_Microdatos_Base.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/02_P_parrafos_de_texto_html_in_BLock.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/99_metadatos_en_html.html",
+		"/C/xampp/htdocs/0_correoPlanes/Plantilla_OnLine_precios_e_info_editables_alter2.html",
+		"/C/xampp/htdocs/0_correoPlanes/Plantilla_OnLine_precios_e_info_editables.html",
+		"/C/xampp/htdocs/0_correoPlanes/Plantilla_OnLine_precios_e_info_editables_alter1.html",
+		"/C/xampp/htdocs/0_correoPlanes/a_borrar.html",
+		"/C/xampp/htdocs/0_correoPlanes/Plantilla_OnLine_Plan_web.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/18_CITE_cite_cita_referencia_a_la_fuente_html_in_Line.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/20_BLOCKQUOTE__cita_en_bloque_a_la_fuente_html_in_Line.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/23_PRE_Pre_Texto_pre_formateado_para_codigo_html_in_Line.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/14_EM_Em_texto_Resaltado_html_in_Line.html",
+		"/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/html/3_etiquetas_para_texto/19_Q__cita_en_linea_a_la_fuente_html_in_Line.html",
+		"/C/xampp/htdocs/0_correoPlanes/Plantilla_OnLine.html",
+		"/C/xampp/htdocs/0_correoPlanes/planSocialMedia.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"empezar",
+			"arrastrar",
+			"identidad",
+			"slice",
+			"concat",
+			"toString",
+			"Splice",
+			"Push",
+			"Pop",
+			"entorno",
+			"confirm",
+			"alert",
+			"elemento",
+			"i",
+			"-(#{$",
+			"hijos",
+			"indice",
+			"var",
+			"div",
+			"singleColor",
+			"elements",
+			"singleColor",
+			"elements",
+			"singleColor",
+			"header",
+			"var",
+			"aver",
+			"demo",
+			"proof",
+			"miBg",
+			"misIconos",
+			"iccons2",
+			"icon",
+			"type",
+			" $",
+			"type",
+			"width",
+			"Control",
+			"repetir",
+			"div",
+			"width",
+			"h2",
+			"_cerrar",
+			"h2",
+			"otros",
+			"ser",
+			"multiservicioshostelar",
+			"post_1_L1_tumb4",
+			"red",
+			" \n",
+			">\n",
+			"Villegas",
+			".hero-unit",
+			".hero/unit",
+			"btn-primary",
+			"h2",
+			"screen_divisiones_sub_divisiones_7"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ul"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "15_geolocalizacion/04_geolocalizacion_API_google_Maps.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1779,
+								1779
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1007.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/mono/AppData/Roaming/idesktop/DFolder/capetas y arvhicos/PROCESOS/Web_y_Programacion/Git/000_guia_de_uso_rapido_git.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2534,
+								2534
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 62.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "3_etiquetas_para_texto_in_Line/29_Microdatos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								855,
+								855
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										14,
+										15
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/angle_bracket.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 513.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Curso de Html.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"source\\css\\main - copia.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 283.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

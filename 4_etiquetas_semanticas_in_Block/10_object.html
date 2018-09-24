@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframes</title>
+
+</head>
+
+<body>
+
+	<!--
+
+	Object:
+	_______
+
+	_tenemos la posibilidad de cargar contenido html, externo a través, de javascript, y flash, detro de un documento html
+
+	_para lo cuál, disponemos del tag <object>
+
+
+
+	Referencia:
+
+		https://www.w3schools.com/tags/tag_object.asp
+
+
+
+
+	_de ésta manera, podremos utilizar el tag, <object>, de la siguiente manera, ej:
+
+
+		<object width="400" height="400" data="helloworld.swf"></object>
+
+	-->
+
+		<div id="topBar"> <a href ="#" onclick="load_home()"> HOME </a> </div>
+
+		<div id ="content"> </div>
+
+		<script>
+		    function load_home(){
+		        document.getElementById("content").innerHTML='<object type="type/html" data="home.html" ></object>';
+		  }
+		</script>
+	
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Geolocalización</title>
+
+	<!--
+
+		Referencia:
+
+			https://www.w3schools.com/html/html5_geolocation.asp
+			https://www.w3schools.com/graphics/google_maps_intro.asp
+
+
+		Tutoriales:
+
+			Obtener Ubicación Del Usuario y Mostrarla en Mapa de Google
+
+				https://www.youtube.com/watch?v=wrby-XgVbig
+
+
+			HTML5 - Geolocation + Google Map - Trazar ruta entre Markers
+
+				https://www.youtube.com/watch?v=ThjkwiZaSP4&t=5s
+
+
+			HTML5 - Geolocation + Google Maps - Mapa dinámico
+
+				https://www.youtube.com/watch?annotation_id=annotation_2823435761&feature=iv&src_vid=ThjkwiZaSP4&v=GLO5wtHWPyM
+
+
+			Como crear un itinerario en Google Maps
+
+				https://www.youtube.com/watch?v=YQsOhzh2tJY
+
+
+		////////////////////////////////////////////////////////////////////////////////////
+
+
+		Acceder a los Métodos de la API:
+		________________________________
+
+		_de ésta manera, como pordremos ver, podremos acceder a los métodos como cualquier objeto javasciprt, ej:
+
+
+			
+	-->
+
+	
+
+</head>
+
+<body>
+
+	<button id="btn">Donde estoy?</button>
+
+
+	<script type="text/javascript">
+
+		//almacenar el elemento html
+		var ele = document.getElementById('btn');
+
+		//capturar el evento del botón en éste caso
+		ele.addEventListener('click', geo);
+
+
+		//acceder a la geolocalización por medio de la API
+		function geo(){
+
+			console.log(navigator.geolocation.getCurrentPosition(geoP, geoN));
+		}
+
+
+		/*en éste caso utilizamos el parámetro genérico "pos", de posición para poder así, pasarle a la consola el mismo parámetro para que ésta pueda obtener y mostrar en pantalla la geolocalización del método en el cuál, ésta función fue llamada en éste caso "getCurrentPostion()"*/
+		function geoP(pos){
+
+			console.log(pos);
+
+		}
+
+			/*de ésta manera, a partir de éste punto el objeto "geolocation", posee a su vez, al objeto "coords", al cuál, podremos acceder para obtener así, la información general del usuario ó cliente, ej:*/
+			function geoP(pos){
+
+				console.log(pos.coords);
+
+			}
+
+				/*más también, podremos obtener "geolocation", exacta accediendo "coords", específicamente a sus propiedades de longitud y la latitud, del usuario ó cliente, ej:*/
+				function geoP(pos){
+
+					var lat = console.log(pos.coords.latitude);
+					var log = console.log(pos.coords.longitude);
+
+				}
+
+
+		function geoN(N){
+
+			console.log(N);
+
+		}
+		
+	</script>
+	
+</body>
+</html>

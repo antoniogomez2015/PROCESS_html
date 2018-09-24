@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>responsive pictures</title>
+
+	<style type="text/css">
+
+		/*
+
+		Tutorial: Trucos HTML 1 - Imágenes responsive sin CSS
+			https://www.youtube.com/watch?v=SJZWmbbziSw
+
+
+		Pictures Responsive:
+		____________________
+
+		_para lo cuál, disponemos de la etiqueta ó tag, "<picture>", a través, de la cuál, pdremos hacer llamadas ha diferentes imágenes en relación al dispositivo respectivo
+
+		_de ésta manera, debemos de entender que la etiqueta "<picture>", requiere tener dentro como mínimo una etiqueta "<img>" 
+
+		_así, como también, ésta nos permitirá incluir etiquetas de tipo <source>, a través, de las cuáles, podremos hacer llamadas a diferentes versiones de una imágen en relación al dispositivo en el cuál, éstas se estarían cargado respectivamente
+
+		_al mismos modo que funcionan las etiquetas de audio y video
+
+		
+		NOTE: en éste método no hay "cascada css", de ésta manera cuando el navegador ver que ha cumplido una de las condiciones leyando de arriba hacia abajo, dejará entonces de hacer lecturas y dejará visible sólo la imágen en la cuál, éste ha encontrado coincidencia ó condición cumplica y las demás serán innoradas
+
+		_por lo cuál, debemos de colocar las imágenes más grandes en la parte superior de la lectura que hace el navegador dentro de la etiqueta picture como se muestra en el siguiente ejemplo:
+
+
+			<picture>
+
+				<source srcset="source/desktop/bg1" alt="fondo" media="(min-width:1000px)">
+
+				<source srcset="source/tablet/bg1" alt="fondo" media="(min-width:600px)">
+
+				<source srcset="source/mobileFirst/bg1" alt="fondo" media="(min-width:320px)">
+				
+				<img src="source/img/bg1" alt="fondo">
+
+
+			</picture>
+
+
+		Queries:
+		________
+
+		_y para controlar que imágen se carga con que dispositivo dispondremos del atributo "media="", a través, del cuál, podremos indicar en el mismos html, que imágen es la que deberá ser cargada en un punto determinado
+
+			_media="(min-width:1000px)
+
+
+		_así, como también, dispondremos de otro atributos que nos permitirá extender las posibilidades aún más allá
+
+		_como por ejemplo poder indicar tanto un mínimo como un máximo de alcance para cada imágen ej:
+
+
+			_media="(min-width:300px) and (max-width:600px)
+
+			_<source srcset="sources/mobileFirst/bg1.jpg" alt="fondo" media="(min-width:320px) and (max-width:600px)">
+
+
+		_como también, podremos indicar otros atributos alternativos como:
+
+			_media="(orientation:landscape)"
+
+
+		NOTE: de ésta manera, podremos transpolar cualquier propiedad de media quieries, de css, ha ésta propiedad de media="()", en html 5
+
+
+
+		Filter:
+		_______
+
+		_así, como también, podríamos utilizar éste sistema para cargar por ejemplo diferentes tipos de formato de imágenes como el de chrome "webp"
+
+		_para lo cuál, debemos de utilizar el siguiente atributo "type="", a través, del cuál, el navegador si reconoce éste tipo de archivo entonces cargará éste tipo de archivo, de lo contrario no lo cargará y pasará entonces ha lever la imágen seguiente dentro de la estructura de "<picture>", ej:
+
+
+			_<source srcset="sources/mobileFirst/bg1.webp" alt="fondo" type="img/webp" media="(min-width:320px) and (max-width:600px)">
+
+
+
+		*/
+		
+
+
+	</style>
+
+</head>
+<body>
+
+	
+
+
+
+	<picture>
+		
+		<source srcset="sources/img/desktop.jpg" alt="fondo" media="(min-width:1000px)">
+		
+		<source srcset="sources/img/tablet.jpg" alt="fondo" media="(min-width:600px)">
+		
+		<source srcset="sources/img/mobile.jpg" alt="fondo" media="(min-width:320px)">		
+		
+		<img src="sources/img/desktop.jpg" alt="fondo">
+
+	</picture>
+	
+</body>
+</html>

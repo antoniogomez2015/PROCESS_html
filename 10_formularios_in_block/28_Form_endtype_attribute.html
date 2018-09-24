@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input</title>
+
+	<script type="text/javascript">
+		
+		var x = document.createElement("INPUT");
+		x.setAttribute("type", "datetime");
+
+	</script>
+
+</head>
+<body>
+	
+	<!--
+
+
+
+	Form Enctype Attribute:
+	_______________________
+
+	_el atributo "enctype="", nos permitirá indicar el tipo de codificación para los datos enviados por un formulario
+	
+
+	_referencia:
+
+			HTML <form> enctype Attribute
+
+				https://www.w3schools.com/TagS/att_form_enctype.asp
+
+
+
+
+	Attribute Values:
+	_________________
+
+
+		_application/x-www-form-urlencoded
+
+			_Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)
+
+
+		_multipart/form-data
+
+			_No characters are encoded. This value is required when you are using forms that have a file upload contro
+
+
+		_text/plain
+
+			_Spaces are converted to "+" symbols, but no special characters are encoded
+
+
+		
+
+	Example:
+	________
+
+
+		_<form action="" name="" method="" enctype="application/x-www-form-urlencoded">
+
+			<input type="datetime" id="demo" value="Responder">
+			<input type="datetime" id="demo" value="Responder">
+			<input type="datetime" id="demo" value="Responder">
+
+		</form>
+
+
+	-->
+
+
+	<form action="" name="" method="" enctype="application/x-www-form-urlencoded">
+
+	  <fieldset>
+
+	    <legend>Personalia:</legend>
+
+	    	<label for="demo" name="proof">Selecciones: </label>
+
+	   			<input type="datetime" id="demo" value="Responder"><br>
+	    		Email: <input type="text"><br>
+	    		Date of birth: <input type="text">
+
+	  </fieldset>
+
+	</form>
+
+</body>
+</html>

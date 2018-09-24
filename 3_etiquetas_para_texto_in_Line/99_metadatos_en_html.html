@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Comentarios</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description=" content="somos programación"/>
+</head>
+<body>
+
+<!--
+
+	Metadatos:
+	__________ 
+
+	_los metadatos son información que el usuario ó cliente no ha ver ó no va ha hacer visible
+
+	_más si el navegador siva ha detectar los metadatos para trabajar y mostrar el documento y presentarlo
+
+
+	Tipos de Metadatos:
+	___________________
+
+	_los metadatos son soportados dentro de un documento html, dentro de las etiquetas ó tags, "<meta>", y así, como también, por medio de diferentes atributos soportados por ésta etiqueta
+
+	_de ésta manera, dispondremos de las metas más comúnes las cuáles son:
+
+
+		De tipo descripción:
+		____________________
+
+		<meta name="rights" content="Massive web"/>
+		
+		<meta name="description" content="Desarrollo y diseño web, en venezuela y todo el mundo, animación digital, concept art, otros"/>
+
+		<meta property="og:site_name" content="Massive web"/>
+
+		<meta property="og:type" content="webside"/>
+
+		<meta property="og:url" content="http://www.google.com"/>
+
+		<meta property="og:title" content="Diseño de paginas web profesionales, html, css, javascript"/>
+
+		<meta property="og:description" content="Creación de paginas web, multimedia, animación, marketting"/>
+
+		<meta property="og:image" content="source/img/favicon.png"/>
+
+
+
+		Contenido por páginas por idiomas y ssbdominios:
+		________________________________________________
+
+		<link rel="alternate" hreflang="en" href="http://en.example.com/pagina.html">
+		<link rel="alternate" hreflang="es" href="http://es.example.com/pagina.html">
+
+		//Contenido en el mismo idioma para en versiones para dististos paises con el mismo idioma
+
+		<link rel="alternate" hreflang="es-ES" href="http://es.example.com/pagina.html">
+		<link rel="alternate" hreflang="es-MX" href="http://mx.example.com/pagina.html">
+
+
+
+		Para el control de dispositivos:
+		________________________________
+
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+
+		<meta name="viewport" content="webside"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			NOTA: tipos de viewport: https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag
+
+
+
+		Meta para Internet Xplorer:
+	  	___________________________
+
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+	  	Para la emulación de app, nativa de IOS:
+	  	________________________________________
+
+	  	//para que en IOS, una web, aparezca como app
+	  	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		//default black ó black translucent (barras y botones)
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	  	//para imágen de presentación ó preload
+	  	<link rel="apple-touch-startup-imge" href="img/apple-touch-icon.png"
+
+
+
+		Para el ícono del navegador:
+		____________________________
+
+		_es conveniente colocar ambas versiones para que así, el navegador elija cuál, renderizar ya que la opción png, es superior en cuando ha calidad y en la representación de iconos en dispositivos móviles
+
+		//formato .ico, para navegadores antiguos
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+		//para navegadores modernos y para aplicaciones en android y ios
+		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+		//nueva especificación para formato svg
+		<link rel="shortcut icon" type="image/svg+xml" href="html5-logo.svg"/>
+
+		//para que el sitio web, aparezca como un ícono en un ios, y algunos android
+		<meta name="apple-touch-icon" seze="57x57" href="apple-touch-icon.png" />
+
+			//para desktop seze="16x16"
+			//para tablets seze="76x76"
+			//para tablets retina display seze="152x152"
+			//para smartphone seze="57x57"
+			//para smartphone retina display seze="120x120"
+
+		_lo más recomendable es colocar la imágen más grande para que el dispositivo la auto escale
+
+
+
+		Para Sitemaps:
+		______________
+
+		_ésta opción nos pemritirá indicarle a los algoritmos de búsqueda de los navegadores como éstos deberán inspeccionar las diferentes estructuras de nuestro sitio web, de una forma más ordenada y óptima
+
+		_así, como también, a partir de éste punto la indexación de nuestro sitio será más amigable para los navegadores
+
+
+			<link rel="sitemap" type="application/xml"  tittle="sitemap" href="sitemap.xml"/>
+
+
+		_páginas del estándar oficial:
+
+			https://www.sitemaps.org/index.html
+			https://www.xml-sitemaps.com/
+
+		_la opción "https://www.xml-sitemaps.com/", nos pemritirá analizar nuestro sitio web, para que éste sistema cree automáticamente el sitemap, de nuestro sitio web, a través, de un análisis de las secciones de nuestro sitio web, el cuál, no debe de exceder los 500, enlaces
+
+		_a continuación un ejemplo de archivo sitemap, xml:
+
+
+		//////////////////////////////////////////////////////////////////
+
+		<?xml version="1.0" encoding="utf-8" ?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+			<url>
+				<loc>
+					http://www.tuDominio.com
+				</loc>
+			</url>
+			<url>
+				<loc>
+					http://www.tuDominio.com/section1.php
+				</loc>
+			</url>
+			<url>
+				<loc>
+					http://www.tuDominio.com/section2.php
+				</loc>
+			</url>
+			<url>
+				<loc>
+					http://www.tuDominio.com/section3.php
+				</loc>
+			</url>
+			<url>
+				<loc>
+					http://www.tuDominio.com/section4.php
+				</loc>
+			</url>
+
+		</urlset>
+
+
+		//////////////////////////////////////////////////////////////////
+
+
+
+		Para los algoritmos de búsqueda del navegador:
+		______________________________________________
+
+		_ésta opción nos pemritirá indicarle a los navegadores que partes de nuestro sitio indexar y analizar y cuál, no indexar ó analizar
+
+		_de ésta manera, podremos regular los navegadores en relación al tipo de contenido de nuestro sitio web, y como queramos que los navegadores interpreten nuestro contenido
+
+		Tutorial:
+
+			Tutorial 8: Archivo Robots.txt | Qué Es, Para qué Sirve y Cómo crearlo
+
+				https://www.youtube.com/watch?v=Hc7J_3vD3EI
+				
+
+		//////////////////////////////////////////////////////////////////	
+
+
+			<link name="robots" content="index,follow" />
+
+
+		_páginas del estándar oficial:
+
+			http://www.robotstxt.org/
+			https://deteresa.com/meta-robots
+
+
+		_Valores posibles para ésta metatag:
+
+		//////////////////////////////////////////////////////////////////
+
+			_Index / NoIndex – Indica si tu página debe incluirse en los índices del buscador, o no
+
+			_Follow / NoFollow – Indica si los enlaces de tu página deben ser rastreados y pasar valor de enlace, o no
+
+			_Index, Follow – Permite la indexación y el rastreo de la página por parte de los buscadores. Es la combinación por defecto y la que se supone cuando careces de esta etiqueta en tus páginas.
+
+			_NoIndex, Follow – Evita la indexación pero permite el rastreo. Es la combinación ideal cuando deseas evitar que una página aparezca en el índice de los buscadores.
+
+			_Index, NoFollow – Permite la indexación pero evita el rastreo. Es la combinación que debes utilizar cuando una página contiene enlaces que no necesariamente respaldas (este es el caso de páginas en las que el contenido está generado por el usuario).
+
+			_NoIndex, NoFollow – Evita la indexación y el rastreo. La verdad, no hay muchas razones para usar esta combinación.
+
+
+		//////////////////////////////////////////////////////////////////
+
+		_ya que ésto contempla que en la raiz de nuetro sitio web, existirá un archivo de tipo "robots.txt", en el cuál, existirá la siguiente informaicón:
+
+		//////////////////////////////////////////////////////////////////
+
+			User-agent: *
+			Allow: /
+
+		//////////////////////////////////////////////////////////////////		
+		_lo cuál, se podría traducir que le estamos diciendo al negador; métete en todas mis carpetas del sitio web, e indexa todo el contenido
+
+
+
+	Más Metas:
+	__________
+
+	  <meta charset="UTF-8">
+	  <meta name="description" content="Free Web tutorials">
+	  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	  <meta name="author" content="John Doe">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	  NOTA: alternativa de viewport, más completa para detectar el tamaño de la pantalla del usuario y poder utilizar a su vez, los media queries
+	  
+	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+
+
+
+
+ Estructura de un html, con metas: (listo para usar)
+ _________________________________
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta property="og:site_name" content="esculapio"/>
+	<meta property="og:type" content="webside"/>
+	<meta property="og:url" content="http://www.esculapio.net.ve/"/>	
+	<meta name="description" content="Insumos y Suministros Médicos, Material Quirúrgico y Equipos de Rehabilitación"/>
+	<meta name="Keywords" content="insumos suministros médicos material quirúrgico medicinas Rehabilitacion"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="alternate" hreflang="es" href="http://es.example.com/pagina.html">
+
+	<title>Esculapio Medical Universe</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+
+
+-->
+		
+
+	
+</body>
+</html>

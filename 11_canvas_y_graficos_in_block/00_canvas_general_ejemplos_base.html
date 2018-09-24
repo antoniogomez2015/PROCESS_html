@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+
+	<style type="text/css">
+
+		body{
+			border: 0%;
+			padding: 0%;
+			margin: 0% auto;
+		}
+
+			canvas{
+				border: 1px solid black;
+				margin: auto;
+				text-align: center;
+			}
+
+	</style>	
+
+
+	<script type="text/javascript">
+
+
+		/*
+
+			Tutorial:
+
+				Curso de HTML5 API (13 videos) https://www.youtube.com/playlist?list=PLEB8E488D1C2D4C9F
+
+
+
+			Referencia Global de todas las APIs, html5
+			
+				http://html5index.org/
+
+		*/
+
+
+		
+
+		/*cuando el documento sea cargado ésta función se ejecutará*/
+		function cargador(){
+
+			/*Creación de Paths, libres*/
+
+				//optener el elemento canvas del html		
+				var canvas = document.getElementById("lienzo");
+
+				//seleccionar el contexto del objeto "canvas", en éste caso será el contexto 2d
+				var ctx = canvas.getContext("2d");
+
+
+				//dibular líneas ó paths, 2d; cordeandas (x,y)
+				ctx.moveTo(0,0);
+
+					//proyectar el path
+					ctx.lineTo(500,250);
+
+						//extender un path, existente
+						ctx.lineTo(122,600);
+
+				//relleno ó grosor del path, para que éste sea visible
+				ctx.stroke();
+
+
+				//crear más de una parh, independientes uno del otro
+
+					//resetear y crear un nuevo path, independiente
+					ctx.beginPath();
+
+						//reubicar el punto a partir del cuál, deseamos que comience el nuevo path
+						ctx.moveTo(250,300);
+
+							//proyectar el path
+							ctx.lineTo(100,350);
+
+								//proyectar el path
+								ctx.lineTo(150,500);
+
+
+					//método para cerrar un path, abierto
+					ctx.closePath();
+
+					//propiedad para rellenar un path, cerrado
+					ctx.fillStyle = "blue";
+
+					//la propiedad de estilo "strokeStyle", debe de ir primero que el método stroke()
+					ctx.strokeStyle = "red";
+
+					//así, como también, podremos indicar un ancho para la línea
+					ctx.lineWidth = 5;
+
+					//relleno ó grosor del stroke, contorno del path, para que éste sea visible
+					ctx.stroke();
+
+					//para rellenar un path, cerrado necesitaremos del método fill()
+					ctx.fill();
+
+
+
+
+			/*creación de rectángulos*/
+
+				/*
+				_más para la creación de rectángulos dispondremos de éste método "rect(x,y,w,h)", el cuál, hace más práctiva la reación de rectángulos
+
+				_donde (x,y), corresponden a a los puntos iniciales a partir de la cuál, se proyectará el rectángulo
+
+				_y donde (w,h), corresponden al ancho y al alto deseado para el respectivo rectángulo ha crear
+
+				*/
+
+				//resetear y crear un nuevo path, independiente
+				ctx.beginPath();
+
+					//método práctico para la creación de un rectángulo
+					ctx.rect(150,250,150,100);
+
+					//
+					ctx.fillStyle = "green";
+
+					//rellenos para el rectángulo
+					ctx.fill();
+
+
+
+			/*creación de círculos*/
+
+				/*
+				_para la creación de círculos dispondremos del método "arc(x,y,r,startAngle,endAngle,rotation)", el cuál, hace más práctiva la reación de círculos
+
+				_donde (x,y), corresponden a a los puntos iniciales a partir de la cuál, se proyectará el círculo
+
+				_y donde "r", corresponderá al radio ó cuan grande será el círculo
+
+				_y tanto el ángulo inicial como el final, nos permitirá indicar si el círculo será será total mente geométrico ó si será un óvalo ó ovoide, otros
+
+					_de ésta manera, podremos crear radios ó semi círculos para lo cuál, debemos hacer indicando los valores en valores de trigonometría a través, de la constante matemática "PI", la cuál, vale: 3.14...
+
+					_entendiéndo así, que el círculo completo valor 2PI, ó "3.14 x 2", éstas operaciones las podemos realizar a través, de cálculos manuales
+
+					_así, como también, haciendo de las operaicones matemáticas de javascript
+
+						_var sphere = Math.PI * 2;
+
+						_pudiendo ahora indicar el arco ó círculo deseado en fracciones ó porcentajes de éste:
+
+							_ctx.arc(100, 150, 50, 0, sphere / 2, true);
+
+							_ctx.arc(100, 150, 50, 0, sphere * 0.5, true);
+
+
+				_y el punto de rotación nos permitirá indicar la dirección de creación de el círculos así, como también, indicar el punto de partir a partir del cuál, éste es generado
+
+					_para lo cuál, dispondremos de dos instrucciones "true/false", donde false, es la opción por defecto
+
+					_de ésta manera, rápidamente podremos cambiar el sentido de la creación del círculo
+
+				*/
+
+				//guardamos en una variable el factor radial de PI
+				var sphere = Math.PI * 2;
+
+				//resetear y crear un nuevo path, independiente
+				ctx.beginPath();
+
+					//método para trazar círculos
+					ctx.arc(100, 150, 50, 0, sphere/2, true);
+
+					//método para contornear paths
+					ctx.stroke();
+
+
+
+			/*Crear Texto en Canvas*/
+
+				/*
+				_para la creación de texto dentro de canvas, debemos hacer uso del método fillText(text,x,y)
+
+				_donde el "text", hará referencia al copy, ó string, ha representar
+
+				_y donde (x,y), harán referencia a las cordenadas de inicio ó generación del texto
+
+				*/
+
+				//color para el texto
+				ctx.fillStyle = "orange";
+
+				//tipo de fuente ha utilizar (respetar el orden)
+				ctx.font = "bold 48px arial"
+
+				//creación de texto en canvas
+				ctx.fillText("Hola Mundo", 100, 100);
+
+
+
+
+			/*crear semi curvas  ó Beziers*/
+
+				/*
+				_para lo cuál, tendremos que hacer uso del método "bezierCuveTo(float cp1x, float cp1y, float cp2x, float cp2y, floatx, float y)"
+				*/
+
+
+				ctx.beginPath();
+				ctx.fillstyle = "rgba(200,0,0,0.5)";
+				ctx.moveTo(80,75);
+				ctx.bezierCurveTo();
+
+
+			/*trabajar con imágenes de fondo*/
+
+				//no me funcionó buscar más información
+
+					//para dibujar gráficos sobre imágenes
+
+						//tutorial: 02.- Curso HTML 5. Trabajar con la API Canvas.
+
+
+				
+				//_para lo cuál, primeramente creamos una nueva imágen
+				var img = new Image();
+
+				//para luego llamar ésta imágen desde el disco duro
+				img.src = "../00_img_referencia/desktop.jpg";
+
+				//para luego ubicar ésta imágen dentro del lienzo
+				img.onload = function(){
+					ctx.drawImage(img, 0,0);
+				}
+
+				
+
+
+
+
+			}
+		
+	</script>
+
+
+
+</head>
+
+<body onload="cargador()">
+
+	<!--
+
+	Canvas:
+	_______
+
+	_el elementos canvas es parte de la API, html, la cuál, requerirá la implementación de javascript, para poder funcionar
+
+
+		Referencia:
+
+				https://www.w3schools.com/html/html5_canvas.asp
+
+					https://www.w3schools.com/tags/ref_canvas.asp
+
+
+			HTML5 Pro
+
+				01.- Curso de HTML 5. Introducción.
+					https://www.youtube.com/watch?v=h4il-bzcZVM&list=PLEB8E488D1C2D4C9F
+
+
+
+
+	_de ésta manera, a través, de canvas, y javascript, podremos crear gráficos geométricos y trazados libres en el canvas ó lienzo así, como también, podremos crear formas y gráficos rellenados de color e incluso gradientes ó degradas los cuáles, podremos utilizar como fondos, otros
+
+
+
+
+
+
+	Canvas Atributes:
+	_________________
+
+	_el elemento <canvas>, dispone de los siguientes atributos:
+
+
+		_atrib: width    Value: "pixels"   Descrip: "Specifies the width of the canvas"
+
+
+		_atrib: height   Value: "pixels"   Descrip: "Specifies the height of the canvas"
+
+
+
+
+
+	API Canvas HTML5:
+	_________________
+
+		_API: "Application Program Interface"
+
+			_2dcontext
+
+				Referencia:
+
+					https://www.w3.org/TR/2dcontext/
+
+
+	_de ésta manera, html5, ha incorporado diferentes métodos y propiedades javascript, dentro del propio html
+
+	_de ésta manera, procemos acceder ó llamar ha éstos a través, de javascript, como si fuesen objetos, propiedades ó métodos nativas ó pre construidas dentro de javascript
+
+
+
+
+
+	-->
+
+
+
+		<canvas id="lienzo" name="demo" width="600%" height="500px"> 
+			
+
+		</canvas>
+
+
+
+	
+	
+</body>
+</html>

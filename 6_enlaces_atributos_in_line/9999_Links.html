@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML</title>
+</head>
+<body>
+
+<!--
+
+	Enlaces / Links:
+	________________
+
+	_tenemos la posibilidad de crear enlaces a través, de textos e imágenes y a través, de cualquier elemento html
+
+	_para lo cuál, debemos de hacer de la etiqueta ó tag, "<a></a>"
+
+	_la etiqueta ó tag, <a>, requiere el atributo "href="", a través, del cuál, podremos indicar la ruta de destino como un nuevo direccionamiento web
+
+	_de ésta manera, los enlaces pueden tener cuatro funciones ó alcances, éstos son:
+
+
+		1_y éstos direccionamientos web, pueden ser ha archivos internos los cuáles forman parte del sitio web, como los son archivos "zip", "pdf", otros
+
+		2_así, como también, pueden hacer referencia ha páginas internas de un sitio web, como la página de "contacto, ubicación, otros"
+
+		3_éstos pueden ser anchar a ciertar partes de un mismo documento html, así, dentro de una misma página web, podremos hacer referencia ha una sección ó bloque de información respectiva
+
+		4_así, como también, podremos hacer referencia ha enlaces externos ha nuesntro sitio web, y a nuestra página web, la cuál, se encuentra el enlace respectivo
+
+	_también, podremos hacer que los enlaces en general se ejecuten en la misma página en la cuál, éstos se encuentran así, como también, podremos hacer que éstos enlaces se ejecuten en una nueva ventana del navegador web
+
+
+	Rutas ó Direccionamiento:
+	_________________________
+
+	_las rutas le indican al sistema como acceder ha recurso
+
+	_de ésta manera, podremos configurar tre tipos de rutas ha recursos las cuáles son:
+
+
+		rutas absolutas:
+		________________
+
+			_éstas son urls, únicas y no existe otra url, igual y éstas comienzan con un protocolo "http://"
+
+
+		rutas relativas:
+		________________
+
+			_éstas son relativas al archivo de origen, y éstas se caracterízan por los siguientes casos:
+
+				_origen y destino en la misma carpeta:
+
+					_en éste caso se indica sólo el nombre del destino nada más ej:
+
+						<a href="destino.html" target="_blank">Ir ha Destino</a>
+
+				_el destino está en una sub-carpeta;
+
+					_de ésta manera, para navegar entre carpetas debemos hacer uso de los símboloes:
+
+						_"/":
+
+							_para entrar en un directorio
+
+						_"../:
+
+							_para salir de un directorio
+
+					_en éste caso se indica la ruta separando las carpetas con el signo "/", hasta llegar ó navegar al archivo respecvito, NOTA: nunca de debe comenzar un ruta de éste tipo con un "/", ej:
+
+						<a href="app/layout/destino.html" target="_blank">Ir ha Destino</a>
+
+						<a href="../layout/destino.html" target="_blank">Ir ha Destino</a>
+
+
+		Rutas relativas a la raíz:
+		__________________________
+
+			_éstas sólo funcionan en un entorno de servidor; éste puede ser un servidor local como "localhost", ó un servidor remoto como "elserver.com", yu otros
+
+			_de ésta manera, podremos hacer relación a los respectivos archivos haciendo referencia a la carpeta raíz, ó la carpeta del nivel superior del proyecto en el respectivo servidor
+
+				_<a href="/">ir ha inicio</a>
+
+					_de ésta manera, estaremos indicando ó haciendo referencia al archivo "index.html", de la ruta del servidor
+
+			_de ésta manera, para indicar la ruta raíz, de un proyecto ó servidor debemos hacer uso del símbolo "/", seguido de la ruta la cuál, nos permitirá navegar hasta el respectivo archivo, ej:
+
+				<a href="/destino.html" target="_blank">Ir ha Destino</a>
+
+			_donde en el ejemplo anterior el archivo "destino.html", está ubicado en el mismo directorio de la raíz ó carpeta del nivel superior del servidor
+
+			_en el siguiente ejemplo indcaremos una ruta en la cuál, el archivo se encuentra en una sub-carpeta, ej:
+
+				<a href="/app/layout/destino.html" target="_blank">Ir ha Destino</a>
+
+
+			_de ésta manera, las rutas relativas a la raiz, son más estables y responden sólo a la carpeta raíz, y no a la ubicación de archivos dentro de sub-carpetas dentro de la carpeta raíz	
+
+
+	Atributos:
+	__________
+
+		_href="":
+
+			_éste nos permitirá hacer referencia ha la ruta de destino del enlace
+
+		_target="":
+
+			_éste nos permitirá indicarl al enlace donde éste se ejecutará
+
+			_éste atributo dispone de los siguientes valores:
+
+			"_blank":
+
+				_éste abre el documento en una nueva ventana
+
+			"_self":
+
+				_éste abre el documento en la misma ventana, (opción por defecto)
+
+			"_parent":
+
+				_Abre el documento vinculado en el marco padre
+
+			"_top":
+
+				_Abre el documento vinculado en todo el cuerpo de la ventana
+
+			"framename":
+
+				_Abre el documento vinculado en un marco con nombre
+
+
+		_title="":
+
+			_éste es especialmente para las imágenes que son convertidas en enlaces las cuáles, no contienen un texto propio que sea descriptivo
+
+			_así, como también, es especialmente útil para creación automática de "tool tip", el cuál, aparecerá al momentos de posarnos más de un momento sobre un enlace determiando, ej:
+
+				<a href="http://www.google.com" title="Visita Google">Ir ha Google</a>
+
+			_así, como también, es útil para indexación de google, de cara al SEO
+
+
+		_rel="":
+
+			_éste indica la relación del origen y el destino 
+
+			_el valor nofollow, le indica ha google, que no siga el enlace, ej:
+
+				<a href="http://www.google.com" rel="nofollow">Ir ha Google</a>
+
+			_de ésta manera, google, no indexará ni seguirá éste enlace relacionado
+
+
+
+			_el atributo rel, permite ó recibe los siguientes valores:
+
+				_alternate:
+
+					_Provides a link to an alternate representation of the document (i.e. print page, translated or mirror)
+
+				_author:
+
+					_Provides a link to the author of the document
+
+				_bookmark:
+
+					_Permanent URL used for bookmarking
+
+				_external:
+
+					_Indicates that the referenced document is not part of the same site as the current document
+
+				_help:
+
+					_Provides a link to a help document
+
+
+				_license:
+
+					_Provides a link to copyright information for the document
+
+
+				_next:
+
+					_Provides a link to the next document in the series
+
+
+				_nofollow:
+
+					_Links to an unendorsed document, like a paid link. ("nofollow" is used by Google, to specify that the Google search spider should not follow that link)
+
+
+				_noreferrer:
+
+					_Requires that the browser should not send an HTTP referer header if the user follows the hyperlink
+
+
+				_noopener:
+
+					_Requires that any browsing context created by following the hyperlink must not have an opener browsing context
+
+
+				_prev:
+
+					_The previous document in a selection
+
+
+				_search:
+
+					_Links to a search tool for the document
+
+
+				_tag:
+
+					_A tag (keyword) for the current document
+
+
+
+		hreflang="":
+
+			_éste hace referencia al tipo de lenguaje que tiene el documento al cuál, hace referencia el enlace, ej:
+
+				<a href="http://www.google.com" hreflang="en">
+
+
+		download:
+
+			_éste fuerza al navegador ha desgarcar un archivo sin la necesidad de abrirlo previamente, ej:
+
+				<a href="source/files/img/casa.jpg" download>Descargar Imágen</a>
+
+			_y si le pasamos un valor al atributo, con ese nombre se descargará el archivo, ej:
+
+				<a href="source/files/img/casa.jpg" download="demo1">Descargar Imágen</a>
+
+
+		media="":
+
+			_éste indica que media tipo de dispositivo es el de destino. ej:
+
+				<a href="http://www.google.com" media="print and (resolution:300dpi)">Ir ha Google</a>
+
+			_en el ejemplo anterior hemos configrado el archivo de destino para la impresión
+
+
+
+			_éste atributo dispone de los siguientes operadores, dispositivos y valores:
+
+				Operators:
+
+					_and:
+
+						_éste es conjugable con los posibles valores como en el ejemplo anterior y, significa "AND"
+
+					_not:
+
+						_éste es conjugable con los posibles valores como en el ejemplo anterior y, significa "NOT"
+
+					_,:
+
+						_éste es conjugable con los posibles valores como en el ejemplo anterior y, significa "OR"
+
+				Devices:
+
+					_all  //Default. Suitable for all devices
+
+					_aural  //Speech synthesizers
+
+					_braille  //Braille feedback devices
+
+					_handheld  //Handheld devices (small screen, limited bandwidth)
+
+					_projection  //Projectors
+
+					_print  //Print preview mode/printed pages
+
+					_screen  //Computer screens
+  
+  					_tty  //Teletypes and similar media using a fixed-pitch character grid
+
+					_tv  //Television type devices (low resolution, limited scroll ability)
+
+
+				Values:
+
+					_width: 
+
+						_Specifies the width of the targeted display area. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (min-width:500px)"
+
+					_height:
+
+						_Specifies the height of the  targeted display area. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (max-height:700px)"
+
+					_device-width:
+
+						_Specifies the width of the target display/paper. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (device-width:500px)"
+
+					_device-height:
+
+						_Specifies the height of the target display/paper. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (device-height:500px)"
+
+					_orientation:
+
+						_Specifies the orientation of the target display/paper. Possible values: "portrait" or "landscape", Example: 
+
+							_media="all and (orientation: landscape)"
+
+					_aspect-ratio:
+
+						_Specifies the width/height ratio of the targeted display area. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (aspect-ratio:16/9)"
+
+					_device-aspect-ratio:
+
+						_Specifies the device-width/device-height ratio of the target display/paper. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (aspect-ratio:16/9)"
+
+					_color:
+
+						_Specifies the bits per color of target display. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (color:3)"
+
+					_color-index:
+
+						_Specifies the number of colors the target display can handle. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (min-color-index:256)"
+
+					_monochrome:
+
+						_Specifies the bits per pixel in a monochrome frame buffer. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="screen and (monochrome:2)"
+
+					_resolution:
+
+						_Specifies the pixel density (dpi or dpcm) of the target display/paper. "min-" and "max-" prefixes can be used. Example: 
+
+							_media="print and (resolution:300dpi)"
+
+					_scan:
+
+						_Specifies scanning method of a tv display. Possible values are "progressive" and "interlace". Example: 
+
+							_media="tv and (scan:interlace)"
+
+					_grid:
+
+						_Specifies if the output device is grid or bitmap. Possible values are "1" for grid, and "0" otherwise. Example: 
+
+							_media="handheld and (grid:1)"
+
+
+		_type:
+
+			_éste permite especificar el tipo de media de un enlace ej:
+
+				<a href="http://www.w3schools.com" type="text/html">W3Schools</a>
+
+
+
+	1_Enlaces ha Archivos:
+	______________________
+
+		_de ésta manera, también, podremos acceder ha archivos como "pdf", y archivos "zip", entre otros, ej:
+
+		<a href="sources/files/documentacion.pdf">Referencia</a>
+
+
+
+	2_Enlaces Internos:
+	___________________
+
+	_éstos nos permitirán relacionar enlaces ha documentos internos de nuestra página web, ej:
+
+		<a href="contacto.html">ir a Contacto</a>
+
+	_de ésta manera, podremos navegar entre documentos html, de nuestra página web
+
+	
+
+	3_Enlace Tipo Ancla ó Marcadores:
+	_________________________________
+
+	_los enlaces tipo ancla ó marcadores nos permitirán crear enlaces específicos dentro de un mismo documento ó página html
+
+	_de ésta manera, los marcadores se indican con "#", seguido del valor del atributo "id="", ó identificador del destino, ej:
+
+		<a href="#miReferencia">Ir ha destino</a>
+
+	_de ésta manera, el enlace se relacionará con el elemento html, que tenga el atributo identificador "id="", en éste caso con el valor de "miReferencia", ej:
+
+		<h2 id="miReferencia">Referencia del contenido</h2>
+
+	_así, como también, podríamos hacer referencia a una sección de una página diferentes sea ésta otra página de nuestro sitio web, ó de otro sitio web
+
+	_para lo cuál, necesitaremos copiar la ruta url, de la llamada del ancla, ej:
+
+		http://www.wilkipedia/articulo#reseña1
+
+	_de ésta manera, podremos utilizar ésta ruta en un enlace el cuál, haga referencia ha esa página web, específicamente ha esta página y a su vez, específicamente ha ese artículo dentro de esa página, ej:
+
+		<a href="http://www.wilkipedia/articulo#reseña1">referencia en wilkipedia</a>
+
+
+
+	4_Enlaces Externos:
+	___________________
+
+	_para relacionar elementos html, como enlaces externos debemos de cumplir con las siguientes características
+
+	_la ruta del enlace debe de estár compuesta con los siguientes elementos, ej:
+
+
+		<a href="http://www.google.com" target="blank">Ir ha Google</a>
+
+
+		_protocolo:
+
+			_http:// (éste es requerido)
+
+				_el potocolo es requrido para enlaces externos
+
+				_el protocolo más conocido en la web, es "http://", el cuál, es un protocolo para transferir archivos de tipo html
+
+				_definición de un protocolo es un conjunto de reglas que utilizan las computadoras y dispositivos para compartir archivos
+
+				_tipos de protocolos:
+
+					_https://
+
+						_éste se utiliza para navegación seguro, lo utilizan las entidades financieras el cuál, utiliza una codificación cifrada
+
+					_ftp://
+
+						_éste se utiliza para transferir archivos ha un servidor
+
+
+		_sub-dominio:
+
+			_www.
+
+				_éste puede ser las tres "w", ó nombre de un sub-dominio web
+
+		_domain:
+
+			_misitioweb
+
+				_éste corresponderá al nombre del sitio web, personalizado
+
+
+		_extensión:
+
+			_.com
+
+				_éste corresponderá a la extensión la cuál, puede variar
+
+
+
+
+-->
+
+
+	<!--enlace externo-->
+
+	<a href="http://www.google.com" target="_parent">Ir ha Google</a>
+
+
+
+
+
+	
+</body>
+</html>

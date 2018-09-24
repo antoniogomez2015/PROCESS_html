@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tables</title>
+
+	<style type="text/css">
+
+		table{
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 5%;
+			border-collapse: collapse;
+		}
+
+			td{
+				border: 1px solid black;
+				line-height: 1.5;
+				text-align: center;
+			}
+
+			tr:hover{
+				background-color: grey;
+			}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!--
+
+
+		Caption and Atributes de las Tablas HTML:
+		_________________________________________
+
+		_el elemento <caption>, nos permnitirá agregar una descripción como título ó descripción de la tabla repectiva
+
+
+			Referencia:
+
+					https://www.w3schools.com/tags/tag_caption.asp
+
+
+
+
+
+		Atributes:
+		__________
+
+		_el tag <caption> de las tablas disponen de los siguientes atributos:
+
+
+			_atrib: align   Value: "left right top bottom"   Descrip: "Defines the alignment of the caption"
+
+
+		
+
+
+
+
+	-->
+
+
+	<table>
+
+		<thead>
+
+			<tr>
+				
+				<th>Nombre</th>
+
+				<th>Apellido</th>
+
+				<th>Cargo</th>
+
+			</tr>			
+
+		</thead>
+
+
+		<tfoot>
+			
+			<tr>
+				
+				<td colspan="2">Total:</td>				
+
+				<td>Tres Empleados</td>
+
+			</tr>
+
+		</tfoot>
+
+
+		<tbody>
+
+			<tr>
+				
+				<td>José</td>
+
+				<td>Gomez</td>
+
+				<td>Gerente</td>			
+
+			</tr>
+
+			<tr>
+
+				<td>Alberto</td>
+
+				<td>Jimenez</td>
+
+				<td>Consultor</td>
+				
+			</tr>
+
+			<tr>
+
+				<td>Maria</td>
+
+				<td>Perez</td>
+
+				<td>Jefe de Planta</td>
+				
+			</tr>			
+
+		</tbody>
+
+		
+		
+		
+
+	</table>
+	
+</body>
+</html>

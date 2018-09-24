@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Microdatos</title>
+</head>
+<body>
+
+<!--
+	
+	Microdatos:
+	___________
+
+		_los microdatos permiten mostrar información en más detalle
+
+		_de ésta manera, los microdatos permiten especificar el significado del texto de forma detallada para los diferentes tipos de datos
+
+		_así, podremos obtener los esquemas y especificaciones de todos los microdatos disponibles organizados, validados y actualizados constantemente
+
+		_por medio de la utiliación de un set de paámetros especificados en: 
+
+
+			_"http://schema.org/docs/gs.html"
+
+
+
+		Tutorial:
+		_________
+
+		_tutorial de datos estructurados ó microdatos a través, de scheme, y twitter cards, y facebook
+
+			
+			Lleva tu sitio a la primera página de Google usando datos estructurados
+		
+				https://www.youtube.com/watch?v=bhY3wnocMdc
+
+
+
+
+	Definición de Microdatos:
+	_________________________
+
+	_los microdatos son un set, de atributos que permite especificar que tipo de texto y contenido se trata de forma semántica en cada elemento ó etiqueta html, de documento de una página web
+
+	_de ésta manera, podríamos indicarle al navegador que un texto determinado es el nombre de una person, que éste otro texto es el cargo de la persona, corre, ciudad, edad, sexo, otros, y así, secesivamente
+
+
+
+	Herramientas:
+	_____________
+
+	_más también, dispondremos los lineamientos de google, para tener correctamente microtados en una página web:
+
+		_"https://developers.google.com/search/docs/guides/intro-structured-data"
+
+
+		_donde incluso google, nos ofrece un probador de nuestras URL, para analizar los microtados existentes en una página determinada:
+
+			_"https://search.google.com/structured-data/testing-tool"
+
+
+
+	Atributos:
+	__________
+
+	_así, de ésta manera, podremos indicar los microdatos a través, de tres atributos los cuáles son:
+
+
+		_itemscope:
+
+			_éste permite indicar el contexto, es un atributo booleano ó vacío
+
+			_ésto quiere decir que éste atributo no se define con un valor que lo acompaque y por ende éste atributo se declara sólo de forma única
+
+				_de ésta manera, a la etiqueta ó elemento contenedor principal del contenido debemos de agregarle éste atributo (itemscope), sin valor alguno asignado
+
+				_de ésta manera, le estaremos indicando al navegdor que dentro de todo éste contenido habrán microdatos
+
+
+		_itemtype:
+		
+			_éste indica el tipo de schema, extraido de "Schema.org"
+
+				_y al igual que el atributo (itemscope), también, tendremos que agregarle al elemento ó etiqueta contenedora principal del contenido que deseamos que tenga microdatos, debemos de agregarle también, el atributo (itemtype), más éste si requerirá un valor
+
+				_para lo cuál, debemos de ir a la página "http://schema.org/docs/gs.html", e ir a la sección de "Schemas"
+
+				_y allí encontraremos organizados los esquemas en una sección por tipo, y otra sección por en la cuál, podremos ver la lista completa
+
+					_esquemas por tipos:
+
+						_"http://schema.org/Thing"
+
+
+					_esquema todos por listas:
+
+						_"http://schema.org/docs/full.html"
+
+				_y cuando hayamos definos un esquema deseado por ejemplo "Organization", tendremos que copiar la ruta url, del navegador de ésta página pasarla como valor del atributo "itemtype", ej:
+
+					itemtype="http://schema.org/Organization"
+
+
+
+		_itemprop:
+
+			_éste indica el tipo de dato 
+
+			_de ésta manera, luego de haber especificado para el elemento contenedor los atributos "itemscope", y "itemtype="", tendremos que indicar también, el tipo de dato dentro del esquema de trabajo ó indicado en el atributo "itemtype=""
+
+			_por ejemplo "Organization/address"
+
+
+				<div itemscope itemtype="http://schema.org/Organization">
+
+					<p itemprop="address">Mi Dirección es Barquisimeto Estado Lara</p>
+
+				</div> 
+
+
+
+	Tipos de Schemas:
+	_________________
+
+	_disponemos de una serie de esquemas de microdatos, a continuación los esquemas de microdatos más utilizados:
+
+		_Organization (para representar una organización):
+
+			_"http://schema.org/Organization"
+
+
+		_Person (para representar una persona):
+
+			_"http://schema.org/Person"
+
+
+		_Place (para representar un lugar):
+
+			_"http://schema.org/Place"
+
+
+		_Product (para representar un producto):
+
+			_"http://schema.org/Product"
+
+
+		_Intangible (para representar productos intangibles):
+
+			_"http://schema.org/Intangible"
+
+
+		_CreativeWork (para representar trabajo creativos):
+
+			_"http://schema.org/CreativeWork"
+
+
+		_Event (para representar eventos):
+
+			_"http://schema.org/Event"
+
+
+
+
+	Valores:
+	________
+
+		_de ésta maenra, luego de haber especificado el contexto, el tipo de esquema 
+
+		_es hora indicar el tipo datos a en relación al esquema seleccionado
+
+		_para lo cuál, debemos debemos de entrar dentro del esquema seleccionado y analizar el tipo de dato que más se adapta al dato ó elemento que deseamos identificar ó especificar ante el navegador
+
+
+
+-->
+
+
+
+<article itemscope itemtype="http://schema.org/Person">
+	
+	<img itemprop="image" src="source/img/empleado1.jpg" alt="avatar">
+
+	<h2 itemprop="name">Tony Gomez</h2>
+
+	<p itemprop="jobTitle">Director de Proyectos de Massive.ca</p>
+
+	<p itemprop="email">massive.ca@gmail.com</p>
+
+	<p itemprop="address">Barquisimeto, Lara, Venezuela</p>
+
+</article>
+
+<!--
+
+	Resumen:
+	________
+
+	_de ésta manera, con el atributo "itemscope", estaremos indicando que en la etiqueta ó tag, <article>, habrán microdatos
+
+	_y a través, del atributo itemtype="", podremos indicar la sección ó categoría en la cuál, se encuentras los mocrodatos a los cuáles vamos ha hacer referencia
+
+	_y a través, de la etiqueta itemprop="", podremos indicar los microdatos específicos para cada sub-elemento ha identificar en relación al esquema de microdato seleccionado y especificado
+
+
+
+-->
+	
+
+	
+</body>
+</html>

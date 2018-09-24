@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML</title>
+</head>
+<body>
+
+<!--
+
+	Picture en HTML:
+	________________
+
+
+	_éste elemento nos permitirá crear elementos responsive en html5, de ésta manera, podremos cambiar recursos en relación a los diferentes tamaños del viewport, de los diferentes dispositivos
+
+	_para lo cuál, dispondremos del tag:
+
+		_<picture> 
+
+
+	_el cuál, a su vez, requerirá del tag, <source>, y éste a su vez, requerirá el atributo srcset="", a diferencia del src="", del tag, <img>
+
+		_<source srcset="url..."
+
+
+	_y del tag:
+
+		_<img>
+
+		_y como imágen de carga por defecto debemos de indicar una <img>, normal con una imágen en tamaño promedia a las demás imágenes en relación a los diferentes dispositivos
+
+		_el tag, <img>, debe de ir al final, posteriormente de elementos de tipo <source>, para que así, el sistema no de problemas
+
+
+	_para que así, el sistema de picture, pueda manejar los diferentes recursos a través, de éstas tags, así, como atrubutos auxiliares para éstas
+
+	_para lograr así, administrar los recursos en relación el viewport, ó dispositivos en los cuáles, se esté renderizando el html
+
+
+
+	Lectura, Criterio e Interpretación:
+	___________________________________
+
+	_para que el sistema funciones correctamente cargando la imágen correcta para cada respectivo dispositivo ó viewport, debemos colocar los recursos ó <source>, en un orden específico, el cuál, es el siguiente:
+
+		_debemos de color los recursos en orden descendente en relación a las imágenes de mayor tamaño en la parte superior y las imágenes más pequeñas en la parte inferior
+
+		_entendiéndo así, que el sistema detectará primeramente los dispositivos con un viewport, más grande que los dispositivos con un viewport, más pequeño
+
+
+
+	_a continúación un ejemplo:
+
+
+		<picture>
+
+			<source srcset="source/img/producto1_desktop.jpg" alt="producto1" media="(min-width: 1200px)">
+
+			<source srcset="source/img/producto1_tablet.jpg" alt="producto1" media="(min-width: 600px)">
+
+			<source srcset="source/img/producto1_mobile.jpg" alt="producto1" media="(min-width: 340px)">
+
+			
+			<img src="source/img/producto1.jpg" alt="producto1_midle">
+
+		</picture>
+
+
+	
+		
+-->
+
+
+	<picture>
+
+		<source srcset="source/img/producto1_desktop.jpg" alt="producto1" media="(min-width: 1200px)">
+
+		<source srcset="source/img/producto1_tablet.jpg" alt="producto1" media="(min-width: 600px)">
+
+		<source srcset="source/img/producto1_mobile.jpg" alt="producto1" media="(min-width: 340px)">
+
+		
+		<img src="source/img/producto1.jpg" alt="producto1_midle">
+
+	</picture>
+
+
+			
+
+
+	
+</body>
+</html>

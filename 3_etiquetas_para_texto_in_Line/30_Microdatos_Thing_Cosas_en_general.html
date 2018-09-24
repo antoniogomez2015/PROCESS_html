@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Microdatos</title>
+
+	<style type="text/css">
+
+		body{
+			border: 0%;
+			padding: 0%;
+			margin: 0% auto;
+		}
+
+			h2{
+				font-family: arial,helvetica,sans-serif;
+				font-size: 1.5rem;
+				color: black;
+				text-align: center;
+			}
+
+			table{
+				width: 100%;
+				height: auto;
+				margin: auto;
+				text-align: center;
+				font-family: arial,helvetica,sans-serif;
+			}
+
+				table th{
+					color: white;
+					font-weight: bold;
+					background-color: #EE480E;
+				}
+
+				table td{
+					color: #333;
+					font-weight: bold;
+					background-color: #F1DDD6;
+					padding: 0.5% 2%;
+				}
+
+					table td:nth-of-type(1){
+						width: 20%;
+					}
+
+					table td:nth-of-type(2){
+						width: 15%;
+					}
+
+					table td:nth-of-type(3){
+						width: 65%;
+						text-align: justify;
+					}
+
+			div{
+				width: 100%;
+				height: auto;
+			}
+
+				div h3{
+					width: 6%;
+					font-family: arial,helvetica,sans-serif;
+					font-size: 1.5rem;
+					color: red;
+					display: inline-block;
+				}
+
+				div p{
+					width: 80%;
+					font-family: arial,helvetica,sans-serif;
+					line-height: 2;
+					color: black;
+					display: inline-block;
+					text-align: left;
+				}
+
+	</style>
+</head>
+<body>
+
+<!--
+	
+	Microdatos:
+	___________
+
+		_los microdatos permiten mostrar información en más detalle
+
+		_de ésta manera, los microdatos permiten especificar el significado del texto de forma detallada para los diferentes tipos de datos
+
+		_así, podremos obtener los esquemas y especificaciones de todos los microdatos disponibles organizados, validados y actualizados constantemente
+
+		_por medio de la utiliación de un set de paámetros especificados en: 
+
+
+			_"http://schema.org/docs/gs.html"
+
+
+	_a continuación se presentan los esquemas de microdatos disponibles por temas específicos y detallados listos para implementar:
+
+
+
+	Thing | Cosas:
+	______________
+
+	_el esquema de microdatos "Thing", es el más genérico en el cuál, encontraremos diferentipos de microdatos para la mayoría de casos comúnes
+
+-->
+
+<h2>Microdatos Thing <a href="http://schema.org/Thing" target="blank_">Schema.org/Thing</a></h2>
+
+<table>
+	
+	<tr>
+		
+		<th>MICRODATO</th>
+
+		<Th>TYPE</Th>
+
+		<Th>DESCRIPCIÓN</Th>
+
+	</tr>
+
+	<Tr>
+		
+		<Td>additionalType</Td>
+
+		<td>URL</td>
+
+		<td>An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>alternateName</Td>
+
+		<td>Text </td>
+
+		<td>An alias for the item.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>description</Td>
+
+		<td>Text </td>
+
+		<td>A description of the item.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>disambiguatingDescription</Td>
+
+		<td>Text</td>
+
+		<td>A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>identifier</Td>
+
+		<td>PropertyValue  or Text  or URL</td>
+
+		<td>The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>image</Td>
+
+		<td>ImageObject  or URL</td>
+
+		<td>An image of the item. This can be a URL or a fully described ImageObject.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>mainEntityOfPage</Td>
+
+		<td>CreativeWork  or URL</td>
+
+		<td>Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details. Inverse property: mainEntity.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>name</Td>
+
+		<td>Text</td>
+
+		<td>The name of the item</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>potentialAction</Td>
+
+		<td>Action</td>
+
+		<td>Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>sameAs</Td>
+
+		<td>URL</td>
+
+		<td>URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>url</Td>
+
+		<td>URL</td>
+
+		<td>URL of the item.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>about</Td>
+
+		<td>CommunicateAction  or CreativeWork  or Event</td>
+
+		<td>The subject matter of the content.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>actionOption</Td>
+
+		<td>ChooseAction </td>
+
+		<td>A sub property of object. The options subject to this action. Supersedes option.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>category</Td>
+
+		<td>Class  or Invoice  or Offer  or PhysicalActivity  or Product  or Property  or Service</td>
+
+		<td>A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>characterAttribute</Td>
+
+		<td>Game  or VideoGameSeries</td>
+
+		<td>A piece of data that represents a particular aspect of a fictional character (skill, power, character points, advantage, disadvantage).</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>dataFeedElement</Td>
+
+		<td>DataFeed</td>
+
+		<td>An item within in a data feed. Data feeds may have many elements.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>defaultValue</Td>
+
+		<td>PropertyValueSpecification </td>
+
+		<td>The default value of the input. For properties that expect a literal, the default is a literal value, for properties that expect an object, it's an ID reference to one of the current values.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>error</Td>
+
+		<td>Action</td>
+
+		<td>For failed actions, more information on the cause of the failure.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>gameItem</Td>
+
+		<td>Game  or VideoGameSeries</td>
+
+		<td>An item is an object within the game world that can be collected by a player or, occasionally, a non-player character.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>gamePlatform</Td>
+
+		<td>VideoGame  or VideoGameSeries</td>
+
+		<td>The electronic systems used to play video games.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>instrument</Td>
+
+		<td>Action</td>
+
+		<td>The object that helped the agent perform the action. e.g. John wrote a book with a pen.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>item</Td>
+
+		<td>DataFeedItem  or ListItem</td>
+
+		<td>An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')’.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>itemListElement</Td>
+
+		<td>ItemList</td>
+
+		<td>For itemListElement values, you can use simple strings (e.g. "Peter", "Paul", "Mary"), existing entities, or use ListItem. Text values are best if the elements in the list are plain strings. Existing entities are best for a simple, </td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>itemReviewed</Td>
+
+		<td>AggregateRating  or Review</td>
+
+		<td>The item that is being reviewed/rated.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>mainEntity</Td>
+
+		<td>CreativeWork</td>
+
+		<td>Indicates the primary entity described in some page or other CreativeWork. inverse property: mainEntityOfPage.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>mentions</Td>
+
+		<td>CreativeWork</td>
+
+		<td>Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>object</Td>
+
+		<td>Action</td>
+
+		<td>Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.object	Action 	The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read a book.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>quest</Td>
+
+		<td>Game  or VideoGameSeries</td>
+
+		<td>The task that a player-controlled character, or group of characters may complete in order to gain a reward</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>replacee</Td>
+
+		<td>ReplaceAction </td>
+
+		<td>A sub property of object. The object that is being replaced.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>replacer</Td>
+
+		<td>ReplaceAction </td>
+
+		<td>A sub property of object. The object that replaces.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>requiredCollateral</Td>
+
+		<td>LoanOrCredit </td>
+
+		<td>Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>reservationFor</Td>
+
+		<td>Reservation </td>
+
+		<td>The thing -- flight, event, restaurant,etc. being reserved.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>result</Td>
+
+		<td>Action</td>
+
+		<td>The result produced in the action. e.g. John wrote a book</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>serviceOutput</Td>
+
+		<td>Service</td>
+
+		<td>The tangible thing generated by the service, e.g. a passport, permit, etc. Supersedes produces.</td>
+
+	</Tr>
+
+	<Tr>
+		
+		<Td>targetCollection</Td>
+
+		<td>UpdateAction</td>
+
+		<td>A sub property of object. The collection target of the action. Supersedes collection.</td>
+
+	</Tr>
+
+</table>
+
+<div>
+
+	<h3>Type</h3>
+
+	<p>Type, hace referencia a la categoría ó esquema a la pertenece éste valor respectivo de microdatos</p>
+	
+</div>
+
+
+
+
+
+	
+
+	
+</body>
+</html>

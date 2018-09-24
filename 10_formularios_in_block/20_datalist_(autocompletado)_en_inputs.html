@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input</title>
+</head>
+<body>
+	
+	<!--
+
+		
+
+
+	Input Datalist:
+	_______________
+
+	_tenemos la posibilidad de crear un sistema de auto completado para el usuario así, como también, de crear sugerencias de selecciones de opciones disponibles ha seleccionar
+
+	_lo cuál, es especialmente útil para la mayoría de procesos ya qué ésto nos permitirá discriminar y limitar las opciones de seleccionar e interpretación del usuario
+
+	_de ésta manera, podremos sugerirle al usuario sólo el contenido que tenemos disponible en la base de datos por ejemplo, otros
+
+
+
+	_referencia:
+
+			https://www.w3schools.com/tags/tag_datalist.asp
+
+
+
+
+	Datalist:
+	_________
+
+	_para lo cuál, debemos de hacer uso del tag, <datalist>, dentro del cuál, debemos de usar el tag, <option>, de forma simplificada, es decir, sin el tag, de cierre
+
+	_y dentro de éste tag, <option>, debemos de agregar el atributo value="", al cuál, como valor debemos de indicarle el texto que le aparecerá al usuario como sugerencia
+
+	_para posteriormente relacionar el sistema de "Datalist", con el respectivo input, para lo cuál, debemos de aplicar un atributo de tipo id="", al elemento <datalist>
+
+	_y al elemento de tipo <input>, debemos de aplicarle un atributo de tipo list="", dentro del cuál, como valor debemos indicarle el valor ó nombre del atributo id="", que le indicamos al elemento <datalist>, previamente
+
+	_de ésta manera, ambos elementos quedarán relacionados al igual manera que quedan relacionados un elemento label, y otros elemento input, por ejemplo
+
+
+
+
+	-->	
+
+	<form>
+		
+		<label for="entrada">Seleccione:</label>
+
+		<input type="text" id="entrada" name="" list="autoComp">
+
+		<input type="submit" name="">
+
+		<datalist id="autoComp">
+			
+			<option value="Html">
+			<option value="Css">
+			<option value="Javascript">
+			<option value="Php">
+			<option value="NodeJs">
+			<option value="Django">
+
+		</datalist>
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframes</title>	
+
+</head>
+
+<!--
+
+	Audio:
+	______
+
+	_dispones de dos formas de incorporar audio en html5, en la cuál, podremos cargar audio de una manera simple y de una manera más soportadas para navegadores más antiguos
+
+
+
+	Referencia:
+
+		https://www.w3schools.com/tags/tag_audio.asp
+
+
+
+	Attributes:
+	___________
+
+	Attribute          Value                    Description
+	_________          _____                    ___________
+
+	autoplay           autoplay                 reproducción automática
+
+	controls           controls                 controles de reproducción visibles
+
+	loop               loop                     reproducción idefinida
+
+	muted              muted                    silenciar audio
+
+	preload            auto, metadata, none     precarga de audio
+
+	src                URL                      especifica la ruta del archivo de audio
+
+
+
+-->
+
+
+
+
+<body>
+
+	<!--forma con soporte a navegadores antiguos-->
+	<audio>
+		
+		<source src="source/audio/podcast.mp3" type="audio/mp3">
+		<source src="source/audio/podcast.wav" type="audio/wav">
+		<source src="source/audio/podcast.ogg" type="audio/ogg">
+		<p>Su navgador no soporta html5</p>
+
+	</audio>
+
+
+	<!--forma directa para navegadores actuales-->
+	<audio src="source/audio/podcast.mp3">Tu navegador no soporta Audio HTML5</audio>
+
+	
+	
+</body>
+</html>

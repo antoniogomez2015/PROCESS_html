@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Geolocalización</title>
+
+	<!--
+
+		Referencia:
+
+			https://www.w3schools.com/html/html5_geolocation.asp
+			https://www.w3schools.com/graphics/google_maps_intro.asp
+
+
+		Tutoriales:
+
+			Obtener Ubicación Del Usuario y Mostrarla en Mapa de Google
+
+				https://www.youtube.com/watch?v=wrby-XgVbig
+
+
+			HTML5 - Geolocation + Google Map - Trazar ruta entre Markers
+
+				https://www.youtube.com/watch?v=ThjkwiZaSP4&t=5s
+
+
+			HTML5 - Geolocation + Google Maps - Mapa dinámico
+
+				https://www.youtube.com/watch?annotation_id=annotation_2823435761&feature=iv&src_vid=ThjkwiZaSP4&v=GLO5wtHWPyM
+
+
+			Como crear un itinerario en Google Maps
+
+				https://www.youtube.com/watch?v=YQsOhzh2tJY
+
+
+		////////////////////////////////////////////////////////////////////////////////////
+
+
+
+		API Definición:
+		_______________
+
+		_"Aplication Programming Interface"
+
+		_de ésta manera, una api, es un conjunto de métodos, propiedades y patrones que permiten desarrollar aplicaciones basadas en otras ó en otro lenguaje 
+
+		_en síntesis podremos definir como api, en html5, como un conjunto de propiedades, métodos y eventos que pueden ser manejados a través, de un lenguaje de programación en éste caso javascript
+
+
+		_por ejemplo; podría hacer una aplicación que comparta un contenido del usuario en Facebook, para lo cuál, habrá que conectar la aplicación respectiva con la api, de facebook, para que la conexión e intercambio de información sea posible
+
+		_de ésta manera, siguiendo el ejemplo anterior podremos ver que podamos conectar nuestra aplicación como una api, ha otra api, en éste caso a la api, de facebook
+
+
+
+		API Geolocation Definición:
+		___________________________
+
+		_el objeto "navigator", contiene al objeto "geolocation", el cuál, a su vez, posee tres métodos 
+
+		_de ésta manera, si mandamos a la consola al objeto navigator, ésta nos mostrará todo los elementos de éste objeto dentro del cuál, estará el objeto geolocation, ej:
+
+
+			<script type="text/javascript">
+
+				console.log(navigator);
+
+			</script>
+
+
+
+		API Methods:
+		____________
+
+			_clearWatch()
+
+				_éste detiene la acción del "watchPosition()", para que así, la geolocalización se detenga, deteniendo así, gps, otros
+
+
+			_getCurrentPosition()
+
+				_para obtener la posición actual del cliente ó usuario (estático)
+
+				_éste método requiere dos parámetros, donde le primero será en caso de éxito y el segundo será en caso de error los cuáles, a su vez, serán funciones
+
+				_de ésta manera, éstas funciones se ejecutarán respectivamente en cada caso
+
+				_así, si el navegador consigue obtener la geolocalización entonces se disparará la función "éxito", en éste caso. Y la función "error", en caso contrario respectivamente
+
+
+			_watchPosition()
+
+				_escuchar la posición del cliente ó usuario mientras éste se mueve (dinámico)
+
+
+			_Geolocation()  
+
+				_éste es un "constructor", y nos permitirá crear objetos a través, de una plantilla como "proto"
+
+			
+
+
+		Acceder a los Métodos de la API:
+		________________________________
+
+		_de ésta manera, como pordremos ver, podremos acceder a los métodos como cualquier objeto javasciprt, ej:
+
+
+			
+	-->
+
+	
+
+</head>
+
+<body>
+
+	<button id="btn">Donde estoy?</button>
+
+
+	<script type="text/javascript">
+
+		//almacenar el elemento html
+		var ele = document.getElementById('btn');
+
+		//capturar el evento del botón en éste caso
+		ele.addEventListener('click', geo);
+
+
+		//acceder a la geolocalización por medio de la API
+		function geo(){
+
+			console.log(navigator.geolocation.getCurrentPosition(geoP, geoN));
+		}
+
+
+		/*en éste caso utilizamos el parámetro genérico "pos", de posición para poder así, pasarle a la consola el mismo parámetro para que ésta pueda obtener y mostrar en pantalla la geolocalización del método en el cuál, ésta función fue llamada en éste caso "getCurrentPostion()"*/
+		function geoP(pos){
+
+			console.log(pos);
+
+		}
+
+			/*de ésta manera, a partir de éste punto el objeto "geolocation", posee a su vez, al objeto "coords", al cuál, podremos acceder para obtener así, la información general del usuario ó cliente, ej:*/
+			function geoP(pos){
+
+				console.log(pos.coords);
+
+			}
+
+				/*más también, podremos obtener "geolocation", exacta accediendo "coords", específicamente a sus propiedades de longitud y la latitud, del usuario ó cliente, ej:*/
+				function geoP(pos){
+
+					var lat = console.log(pos.coords.latitude);
+					var log = console.log(pos.coords.longitude);
+
+				}
+
+
+		function geoN(N){
+
+			console.log(N);
+
+		}
+		
+	</script>
+	
+</body>
+</html>

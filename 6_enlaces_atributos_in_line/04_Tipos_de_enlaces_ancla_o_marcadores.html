@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML</title>
+</head>
+<body>
+
+<!--
+
+	Topos de Enlaces:
+	_________________
+
+	_tenemos la posibilidad de crear diferentes tipos de enlaces con diferentes propósitos
+
+	_de ésta manera, disponemos de los siguientes tipos de enlaces:
+
+
+
+	3_Enlace Tipo Ancla ó Marcadores:
+	_________________________________
+
+
+	Anclas Internos:
+	________________
+
+	_los enlaces tipo ancla ó marcadores nos permitirán crear enlaces específicos dentro de un mismo documento ó página html
+
+	_de ésta manera, los marcadores se indican con "#", seguido del valor del atributo "id="", ó identificador del destino, ej:
+
+		<a href="#miReferencia">Ir ha destino</a>
+
+	_de ésta manera, el enlace se relacionará con el elemento html, que tenga el atributo identificador "id="", en éste caso con el valor de "miReferencia", ej:
+
+		<h2 id="miReferencia">Referencia del contenido</h2>
+
+
+
+	Anclas Externas:
+	________________
+
+	_así, como también, podríamos hacer referencia a una sección de una página diferentes sea ésta otra página de nuestro sitio web, ó de otro sitio web
+
+	_para lo cuál, necesitaremos copiar la ruta url, de la llamada del ancla, ej:
+
+		http://www.wilkipedia/articulo#reseña1
+
+	_de ésta manera, podremos utilizar una ruta en un enlace el cuál, haga referencia ha esa página web, específicamente ha ésta página y a su vez, específicamente ha ese artículo dentro de esa página, ej:
+
+		<a href="http://www.wilkipedia/articulo#reseña1">referencia en wilkipedia</a>
+
+	_como podemos ver al final del enlace hay una referencia a identificador id="", en éste caso:
+
+		_"#reseña1"
+
+	_de ésta manera, sólo debemos crear una estructura de enlace normal más indicando éste enlace que hace referencia a una ancla externa de ésta página
+
+		<a href="http://www.wilkipedia/articulo#reseña1">referencia en wilkipedia</a>
+
+	_para que así, el navegadro al ser accionado ese enlace vaya ha ésta página y baje hasta ese artículo específicamente
+
+	
+-->
+
+
+
+	<!--enlace ancla interno-->
+
+		<!--ancla-->
+		<a href="#miReferencia">Ir ha destino</a>
+
+			<!--destino-->
+			<h2 id="miReferencia">Referencia del contenido</h2>
+
+
+	<!--enlace ancla externo-->
+
+		<!--ancla-->
+		<a href="http://www.wilkipedia/articulo#reseña1">Artículo</a>
+
+			<!--destino-->			
+			<a href="http://www.wilkipedia/articulo#reseña1">referencia en wilkipedia</a>
+
+	
+
+
+
+
+
+	
+</body>
+</html>

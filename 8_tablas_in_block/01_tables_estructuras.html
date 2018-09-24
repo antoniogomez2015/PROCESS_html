@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tables</title>
+
+	<style type="text/css">
+
+		table{
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 5%;
+			border-collapse: collapse;
+		}
+
+			td{
+				border: 1px solid black;
+				line-height: 1.5;
+				text-align: center;
+			}
+
+			tr:hover{
+				background-color: grey;
+			}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!--
+
+
+		Estructuras de las Tablas Html:
+		_______________________________
+
+		_las tablas se usar para mostrar datos y contenido en formato tabla, es decir, en columnas "verticales", y filas "horizontales", estilo hoja de cálculo
+
+
+		_Referencia:
+
+				https://www.w3schools.com/tags/tag_table.asp
+
+
+
+		_a través, de la tag, <table>, (tabla), la cuál, hará de contenedor global de la tabla
+
+			_<table>
+
+		
+		_más también, dispondremos de la tag, <caption>, para crear nombrar ó describir la respectiva tabla, éste tag, debe de ir jsuto después de la tag, <table>, de apertura
+
+				_<caption>
+
+
+
+		_dispondremos de cabeceras principales <thead>, de todo el sistema de las tablas dentro de la cuál, podremos agregar las cabeceras específicas de la tabla <th>, (éste tag, es opcional)
+
+				_<thead>
+
+
+		_y a través, de las tag, <th> de las cabeceras ó títulos de columnas podremos resaltar las cabeceras de contenidos independientes lo cuál, nos pemrnitirá diferenciar y segmentar los contenidos dentro una misma tabla, (éste tag, es opcional)
+
+					_<th>
+
+
+		_más el piel <tfoot>, de la tabla en la estructura de la tabla va antes del body, anque en el navegador se renderizará normalmente al final ó en la parte inferior de la tabla, de ésta manera, debemos de color el <tfoo>, antes del <tbody>, en la estructura de la tabla
+
+				_<tfoot>
+
+					_<tr>
+	
+						_<td>
+
+
+		_así, como también, dispondremos de un body, ó cuerpo <tbody>, para los datos en general ha representar, dentro del cuál, debemos de incluir los elementos <tr>, y <td>, generales
+
+				_<tbody>
+
+
+		_y donde <tr>, (table-row), representará  una fila "horizontal" 
+
+					_<tr>
+
+
+		_y donde <td>, (table-data); rerpesentará un celda ó campo para la información por cada respectiva intercepción entre las fila horizontales y columnas verticales
+
+						_<td>
+
+
+
+
+	_más también, para la personalización de las columnas de las tablas dispondremos del tag, <colgroup>, a través, del cuál, podremos definir atributos para las columnas de la tabla
+
+	_y dentro de las tags, <colgroup>, deben ir tags, de tipo <col>, las cuáles, son seft-closing, ó auto cerranteslas cuáles, representarán a cada columna de la tabla respectivamente de ésta manera, debemos entender que debemos de crear tags <col>, en relación a cuantas columnas existen en la tabla respectiva
+
+
+
+
+
+	-->
+
+
+	<table>
+
+		<caption>Personal de la Empresa</caption>
+
+		<colgroup>
+			
+			<col span="2">			
+
+			<col style="background-color: yellow">
+
+		</colgroup>
+
+		<thead>
+
+			<tr>
+				
+				<th>Nombre</th>
+
+				<th>Apellido</th>
+
+				<th>Cargo</th>
+
+			</tr>			
+
+		</thead>
+
+
+		<tfoot>
+			
+			<tr>
+				
+				<td>Total:</td>
+
+				<td></td>
+
+				<td>Tres Empleados</td>
+
+			</tr>
+
+		</tfoot>
+
+
+		<tbody>
+
+			<tr>
+				
+				<td>José</td>
+
+				<td>Gomez</td>
+
+				<td>Gerente</td>			
+
+			</tr>
+
+			<tr>
+
+				<td>Alberto</td>
+
+				<td>Jimenez</td>
+
+				<td>Consultor</td>
+				
+			</tr>
+
+			<tr>
+
+				<td>Maria</td>
+
+				<td>Perez</td>
+
+				<td>Jefe de Planta</td>
+				
+			</tr>			
+
+		</tbody>
+
+		
+		
+		
+
+	</table>
+	
+</body>
+</html>

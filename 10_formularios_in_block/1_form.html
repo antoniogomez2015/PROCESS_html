@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	
+	<!--
+
+
+
+	From:
+	_____
+
+	_el tag, <form>, nos permitirá crear formularios enteros en los cuáles, podremos contener diferentes tipos de campos de entrada de información ante el usuario
+
+	_de ésta maera, podremos controlar todo el sistema de formulario y agruparlo dentro de un sólo elemento configurable 
+
+	_así, como también, éste tag, nos permitirá soportar atributos especiales para envío y flujo de datos para procesos con base de datos entre otras posibilidades
+
+
+	_Referencia:
+
+		https://www.w3schools.com/html/html_forms.asp
+
+
+
+
+
+	Atributos Disponibles para Form:
+	________________________________
+
+		_atrib: accept-charset   Descript: "Specifies the charset used in the submitted form (default: the page charset)."
+
+
+		_atrib: action   Descript: "Specifies an address (url) where to submit the form (default: the submitting page)."
+
+
+		_atrib: autocomplete   Descript: "Specifies if the browser should autocomplete the form (default: on)."
+
+
+		_atrib: enctype   Descript: "Specifies the encoding of the submitted data (default: is url-encoded)."
+
+
+		_atrib: method    Descript: "Specifies the HTTP method used when submitting the form (default: GET)."
+
+
+		_atrib: name      Descript: "Specifies a name used to identify the form (for DOM usage: document.forms.name)."
+
+
+		_atrib: novalidate   Descript: "Specifies that the browser should not validate the form."
+
+
+		_atrib: target   Descript: "Specifies the target of the address in the action attribute (default: _self)."
+
+
+
+	-->
+
+	<form action="/action_page.php">
+
+	  <label for="male">Male</label>
+	  <input type="radio" name="gender" id="male" value="male"><br>
+	  <label for="female">Female</label>
+	  <input type="radio" name="gender" id="female" value="female"><br>
+	  <label for="other">Other</label>
+	  <input type="radio" name="gender" id="other" value="other"><br><br>
+	  <input type="submit" value="Submit">
+
+	</form>
+
+</body>
+</html>

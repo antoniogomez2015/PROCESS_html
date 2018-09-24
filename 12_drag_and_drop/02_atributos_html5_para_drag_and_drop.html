@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drag and Drop</title>
+
+</head>
+
+<body>
+
+	<!--
+
+	_la API, del módulo de dag and drop, nos permitirá arrastrar y soltar elementos en el navegador a traés, de éste nuevo estandar html
+
+
+	_de ésta manera, podremos crear interfaces, configurables por el usuario, podremos hacer que productos sean arrastrables a un carro de compras, juegos, como rompecabezas, interactivos, otros
+
+	
+
+
+	Referencia:
+
+			Tutorial:
+
+				Curso de HTML5 API (13 videos) https://www.youtube.com/playlist?list=PLEB8E488D1C2D4C9F
+
+
+
+
+	Documentación Oficial:
+
+		https://www.w3schools.com/html/html5_draganddrop.asp
+
+
+			https://dev.w3.org/html5/spec-preview/dnd.html
+
+
+
+
+	Eventos HTML5 para Drag and Drop :
+	__________________________________
+
+	_drag and drop, se puede aplicar en html, através, de unos atributos los cuáles, se deben aplicar tanto a los elementos que serán arrastrables como también, a los elementos sobre los cuáles, se podrán solar los elementos arrastrables
+
+
+	_para lo cuál, dispondremos de los siguientes atributos:
+
+
+		Atributos para elementos arrastrables:
+		______________________________________
+
+			_ondragstart:
+
+				_éste evento es disparado cuando comenzamos ha arrastrar el elemento arrastrable
+
+				_el cuál, llamará un función javascript, ej: "empezar", la cuál, como parámetro le pasaremos el eventos (event), desencadenante de la propia función javascript
+
+
+			_ondrag:
+
+				_y en el trajengo mientras vamos arrastrando el elemento hacia el contenedor de destino se disparará el evento drag
+
+
+			_ondragend:
+
+				_éste desencadenará el evento cuando el elemento arrastrable se deje de attrastrar, es decir, cuando éste es soltado sobre el contenedor de destino
+
+				_el cuál, llamará un función javascript, ej: "empezar", la cuál, como parámetro le pasaremos el eventos (event), desencadenante de la propia función javascript
+
+
+
+
+		Atributos para elementos que recubirán elemento arrastrables:
+		_____________________________________________________________
+
+			_ondragenter:
+
+				_éste evento se disparará cuando el cursor del mouse entra dentro del área del contenedor de destino con el elemento arrastrable seleccionado
+
+				_éste permite que un elementos pueda recibir elementos arrastrables el cuál, devolverá un evento javascript, ej: ondragenter="return enter(event)"
+
+				_donde "enter", será la función a la que estaremos llamando y (event), será el evento que hará de parámeto el cuál, desencadenará el evento a través, de javascript
+
+
+			_ondragover:
+
+				_éste evento se disparará cuando ya nos estamos moviendo dentro del área de destino con el elemento arrastrable seleccionado
+
+				_éste controlará el evento mientras que el usuario esté moviendo el elemento arrastrable sobre el respectivo contenedor con éste atributo,el cuál, devolverá un evento javascript, ej: ondragover="return enter(event)"
+
+				_donde "enter", será la función a la que estaremos llamando y (event), será el evento que hará de parámeto el cuál, desencadenará el evento a través, de javascript
+
+
+			_ondrop:
+
+				_éste evento es disparado cuando soltamos el elemento arrastrable sobre el contenedor de destino
+
+
+			_dragleave:
+
+				_éste evento se dispara cuando el elemento arrastrable entra en el área del contenedor de destino pero luego éste vuelve ha slair fuera del área del contenedor de destino
+
+
+			_ondrop:
+
+				_éste evento tendrá lugar cuando el usuario suelte el elemento arrastrable sobre el elemento con éste atributo, el cuál, devolverá un eventos javascript, ej: 
+				ondrag="return enter(event)"
+
+				_donde "enter", será la función a la que estaremos llamando y (event), será el evento que hará de parámeto el cuál, desencadenará el evento a través, de javascript
+
+
+
+
+	_y el soporte para éstos atributos estará, contemplado a través, de la API, html5, en javascript, dentro del propio html, a través, de atributos y métodos disponibles para éste fin
+
+
+
+
+
+
+	API Drag and Drop:
+	__________________
+
+	_primeramente debemos debemos de configurar la información ha compartir entre los diferentes objetos y elementos html
+
+
+	Funcionalismo:
+	______________
+
+	_cuando el usuario va arrastrar un objeto y ese objeto llegará ha una zona de destino debemos de preparar previamente que información se compartirá entre elementos
+
+	_para lo cuál, dentro de la API, Drag and Drop, dispondremos de un objeto llamada "dataTransfer", el cuál, a su vez, posee dos métodos:
+
+
+		_setData();
+
+			_éste declara que datos serán transmitidos
+
+		_getData();
+
+			_éste declara que datos serán capturados
+
+
+	_de ésta manera, debemos relacionar a través, de una función el métodos "setData()", de la api, de drag and drop, con el elemento que deseamos que sea arrastrable, por medio de un evento html5
+
+
+	_y a través, de otra función debemos relacionar el método "getData/(", de la api, drag and drop. con el elemento que hará de contenedor de destino, por medio de un evento html5
+
+
+	_de ésta manera, le estaremos indicando al navegador que información será compartir entre el elemento arrastrable y que información podrá recibir el elemento contenedor de destino
+
+
+
+	Navegadores:
+	____________
+
+	_más también, dispondremos de un método para estanrizar los navegadores y hacer que éstos reconozcan la api, de drag and drop, éste método es:
+
+		_preventDefault():
+
+
+	_a través, del cuál, podremos resetear las acciones por defecto del navegador, de ésta manera, podremos indicarle nosotros al navegador como éste debe de comportarse a la hora de arrastrar y soltar objetos
+
+
+
+	-->
+	
+</body>
+</html>

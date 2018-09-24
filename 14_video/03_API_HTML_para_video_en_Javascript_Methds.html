@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframes</title>	
+
+</head>
+
+<!--
+
+	API de Video en Javascript:
+	___________________________
+
+	_en html5, dispondremos de una API, preconstruida de javascript, a través, de la cuál, podremos controlar todas las acciones del video de forma avanzada por medio de javascript
+
+
+
+	Referencia:
+
+		https://www.w3schools.com/tags/ref_av_dom.asp
+			https://www.w3.org/2010/05/video/mediaevents.html
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Métodos:
+	________
+
+	_los métodos dentro de la api, de html5, de audio y video nos permitirán ejecutar acciones preconstruidas complejas de control y reproducción
+
+	_de ésta manera, a continuación presentamos un ejemplo del llamado ó ejecución de un evento:
+
+
+		<body>
+
+			<button onclick="playVid()" type="button">Play Video</button>
+			<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+			<video id="myVideo" width="320" height="176">
+			  <source src="mov_bbb.mp4" type="video/mp4">
+			  <source src="mov_bbb.ogg" type="video/ogg">
+			  Your browser does not support HTML5 video.
+			</video>
+
+		</body>
+
+		<script> 
+
+			var vid = document.getElementById("myVideo"); 
+
+			function playVid() { 
+			    vid.play(); 
+			} 
+
+			function pauseVid() { 
+			    vid.pause(); 
+			} 
+
+		</script> 
+
+
+	HTML Audio/Video Methods:
+	_________________________
+
+	Method                       Description
+	______                       ___________
+
+	addTextTrack()               Adds a new text track to the audio/video
+
+	canPlayType()                Checks if the browser can play the specified audio/video type
+
+	load()                       Re-loads the audio/video element
+
+	play()                       Starts playing the audio/video
+
+	pause()                      Pauses the currently playing audio/video
+
+
+
+	
+
+-->
+
+
+
+
+<body>
+
+	<!--forma con soporte a navegadores antiguos-->
+	<video width="320" height="240" controls>
+
+	  <source src="movie.mp4" type="video/mp4">
+	  <source src="movie.mp4" type="video/mp4">
+	  <source src="movie.webm" type="video/webm">
+
+	  <p>Your browser does not support the video tag.</p>
+
+	</video>
+
+
+	<!--forma directa para navegadores actuales-->
+	<video src="source/video/post.mp4">Tu navegador no soporta Video HTML5</video>
+
+	
+	
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tables</title>
+
+	<style type="text/css">
+
+		table{
+			width: 100%;
+			border: 1px solid black;
+			margin-top: 5%;
+			border-collapse: collapse;
+		}
+
+			td{
+				border: 1px solid black;
+				line-height: 1.5;
+				text-align: center;
+			}
+
+			tr:hover{
+				background-color: grey;
+			}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!--
+
+
+		Atributos de las Cabeceras de Filas de las Tablas HTML:
+		_______________________________________________________
+
+		_las cabeceras de filas de tablas disponen de los siguientes atributos:
+
+
+
+			Referencia:
+
+					https://www.w3schools.com/tags/tag_th.asp
+
+
+
+
+			_atrib: abbr   Value: "text"   Descrip: "Specifies an abbreviated version of the content in a header cell"
+
+
+			_atrib: align   Value: "left right  center  justify char"   Descrip: "Aligns the content in a header cell"
+
+
+			_atrib: axis   Value: "category_name"   Descrip: "Categorizes header cells"
+
+
+			_atrib: bgcolor   Value: "rgb(x,x,x) #xxxxxx colorname"   Descrip: "Specifies the background color of a header cell"
+
+
+			_atrib: char   Value: "character"   Descrip: "Aligns the content in a header cell to a character"
+
+
+			_atrib: charoff   Value: "number"   Descrip: "Sets the number of characters the content will be aligned from the character specified by the char attribute"
+
+
+			_atrib: colspan   Value: "number"   Descrip: "Specifies the number of columns a header cell should span"
+
+
+			_atrib: headers   Value: "header_id"   Descrip: "Specifies one or more header cells a cell is related to"
+
+
+			_atrib: height   Value: "pixels | %"   Descrip: "Sets the height of a header cell"
+
+
+			_atrib: nowrap   Value: "nowrap"   Descrip: "Specifies that the content inside a header cell should not wrap"
+
+
+			_atrib: rowspan   Value: "number"   Descrip: "Specifies the number of rows a header cell should span"
+
+
+			_atrib: scope   Value: "col colgroup row rowgroup"   Descrip: "Specifies whether a header cell is a header for a column, row, or group of columns or rows"
+
+
+			_atrib: sorted   Value: "reversed number reversed number number reversed"   Descrip: "Defines the sort direction of a column"
+
+
+			_atrib: valign   Value: "top middle bottom baseline"   Descrip: "Vertical aligns the content in a header cell"
+
+
+			_atrib: width   Value: pixels | %   Descrip: "Specifies the width of a header cell"
+   
+
+
+
+
+	-->
+
+
+	<table>
+
+		<thead>
+
+			<tr>
+				
+				<th>Nombre</th>
+
+				<th>Apellido</th>
+
+				<th>Cargo</th>
+
+			</tr>			
+
+		</thead>
+
+
+		<tfoot>
+			
+			<tr>
+				
+				<td>Total:</td>
+
+				<td></td>
+
+				<td>Tres Empleados</td>
+
+			</tr>
+
+		</tfoot>
+
+
+		<tbody>
+
+			<tr>
+				
+				<td>José</td>
+
+				<td>Gomez</td>
+
+				<td>Gerente</td>			
+
+			</tr>
+
+			<tr>
+
+				<td>Alberto</td>
+
+				<td>Jimenez</td>
+
+				<td>Consultor</td>
+				
+			</tr>
+
+			<tr>
+
+				<td>Maria</td>
+
+				<td>Perez</td>
+
+				<td>Jefe de Planta</td>
+				
+			</tr>			
+
+		</tbody>
+
+		
+		
+		
+
+	</table>
+	
+</body>
+</html>

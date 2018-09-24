@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>map y area</title>
+</head>
+<body>
+	
+	<!--
+
+
+
+	Label:
+	______
+
+	_tenemos la posibilidad de especificar una descripción ó etiqueta para un <input>, ó campo, ó entrada de un formulario ante el usuario ó cliente
+
+	_de ésta manera, podremos relacionar un hablador ó descripción a un input, determinado
+
+	_lo que quiere decir es que podremos utilizar el <label>, para que el usuario acciones el ckeckbox, ó radio button, a través, de un hablador ó descripción de forma más visual, y con una mayor tamaño
+
+	_ésta característica la podemos utilizar para la creación de efectos para le creación de botones especiales ocualtando el checkbox y personalizando el checkbox, otros
+
+
+		label {
+		    cursor: default;
+		}
+
+
+
+
+	Atributos Disponibles para Label:
+	_________________________________
+
+
+		_atrib: for    Value: "element_id"    Descrip: "Specifies which form element a label is bound to"
+
+		_atrib: form   Value: "form_id"       Descrip: "Specifies one or more forms the label belongs to"
+
+
+
+
+
+	-->
+
+	<form action="/action_page.php">
+
+	  <label for="male">Male</label>
+	  <input type="radio" name="gender" id="male" value="male"><br>
+	  <label for="female">Female</label>
+	  <input type="radio" name="gender" id="female" value="female"><br>
+	  <label for="other">Other</label>
+	  <input type="radio" name="gender" id="other" value="other"><br><br>
+	  <input type="submit" value="Submit">
+
+	</form>
+
+</body>
+</html>

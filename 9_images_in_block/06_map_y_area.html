@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>map y area</title>
+</head>
+<body>
+	
+	<!--
+
+
+
+	Map:
+	____
+
+	_tenemos la posibilidad de especificar la procedencia de una imágen de tipo mapa a través, de la tag, <map>, la cuál, por lo general irá acompañada ó precedida de una tag, <img>
+
+	_y a su vez, ésta puede ir acompañada d una tag, <area>, de forma opcional para crear interactividad para la creación de mapas seleccionables ej:
+
+	
+
+
+	Atributos disponibles para <map>:
+	_________________________________
+
+	_el tag, <map>, dispone de los siguientes atributos:
+
+
+		_atributo: name    Valor: "mapname"   Description: "Required. Specifies the name of an image-map"
+
+
+
+
+	Area:
+	_____
+
+	_el tag, <area>, define el área dentro de una imágen de tipo map, entendiendi que una imágen mapa es una imágen con áreas clickeables
+
+	_el tag, siempre estará anidado ha un tag, <map>
+
+
+		<map name="planetmap">
+		  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+		  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+		  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+		</map>
+
+
+	NOTA: existen un atributo "usemap", el cuál, es un atributo del tal <img>, más éste atributo está relacionado con el tag, <area>, de ésta manera, el atributo "usemap", crea relación entre las imágenes y el map
+
+
+	_Referencia:
+
+		https://www.w3schools.com/tags/tag_area.asp
+
+
+
+	Atributos disponibles para <area>:
+	__________________________________
+
+	_el tag, <area>, dispone de los siguientes atributos:
+
+
+		_atrib: alt        Valor: "text"        Descrip: "Specifies an alternate text for the area. 
+
+		_atrib: coords     Valor: "coordinates  Descrip: "Specifies the coordinates of the area"
+
+		_atrib: download   Value: "filename"    Descrip: "Specifies that the target will be downloaded "
+
+		_atrib: href       Valur: "URL"         Descrip: "Specifies the hyperlink target for the area"
+
+		_atrib: hreflang   Value: "language_code" Descrip: "Specifies the language of the target URL"
+
+		_atrib: media      Value: "media query" Descrip: "Specifies what media/device the target URL"
+
+		_atrib: nohref     Value: "value"       Descrip: "Specifies that an area has no associated link"
+
+		_atrib: rel        Value: "alternate author bookmark" Descrip: "Specifies the relationship between the current document and the target URL"
+
+		_atrib: shape    Value: "default rect circle poly"  Descrip: "Specifies the shape of the area"  
+
+		_atrib: target   Value: "_blank _parent _self _top framename" Descrip: "Specifies where to open the target URL"
+
+		_atrib: type     Value: "media_type"   Descrip: "Specifies the media type of the target URL"
+
+
+	-->
+
+	<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+		<map name="planetmap">
+		  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+		  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+		  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+		</map>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML</title>
+</head>
+<body>
+
+<!--
+	
+	Rutas ó Direccionamiento:
+	_________________________
+
+	_las rutas le indican al sistema como acceder ha recurso
+
+	_de ésta manera, podremos configurar tre tipos de rutas ha recursos las cuáles son:
+
+
+		rutas absolutas:
+		________________
+
+			_éstas son urls, únicas y no existe otra url, igual y éstas comienzan con un protocolo "http://"
+
+
+		rutas relativas:
+		________________
+
+			_éstas son relativas al archivo de origen, y éstas se caracterízan por los siguientes casos:
+
+				_origen y destino en la misma carpeta:
+
+					_en éste caso se indica sólo el nombre del destino nada más ej:
+
+						<a href="destino.html" target="_blank">Ir ha Destino</a>
+
+				_el destino está en una sub-carpeta;
+
+					_de ésta manera, para navegar entre carpetas debemos hacer uso de los símboloes:
+
+						_"/":
+
+							_para entrar en un directorio
+
+						_"../:
+
+							_para salir de un directorio
+
+					_en éste caso se indica la ruta separando las carpetas con el signo "/", hasta llegar ó navegar al archivo respecvito, NOTA: nunca de debe comenzar un ruta de éste tipo con un "/", ej:
+
+						<a href="app/layout/destino.html" target="_blank">Ir ha Destino</a>
+
+						<a href="../layout/destino.html" target="_blank">Ir ha Destino</a>
+
+
+		Rutas relativas a la raíz:
+		__________________________
+
+			_éstas sólo funcionan en un entorno de servidor; éste puede ser un servidor local como "localhost", ó un servidor remoto como "elserver.com", yu otros
+
+			_de ésta manera, podremos hacer relación a los respectivos archivos haciendo referencia a la carpeta raíz, ó la carpeta del nivel superior del proyecto en el respectivo servidor
+
+				_<a href="/">ir ha inicio</a>
+
+					_de ésta manera, estaremos indicando ó haciendo referencia al archivo "index.html", de la ruta del servidor
+
+			_de ésta manera, para indicar la ruta raíz, de un proyecto ó servidor debemos hacer uso del símbolo "/", seguido de la ruta la cuál, nos permitirá navegar hasta el respectivo archivo, ej:
+
+				<a href="/destino.html" target="_blank">Ir ha Destino</a>
+
+			_donde en el ejemplo anterior el archivo "destino.html", está ubicado en el mismo directorio de la raíz ó carpeta del nivel superior del servidor
+
+			_en el siguiente ejemplo indcaremos una ruta en la cuál, el archivo se encuentra en una sub-carpeta, ej:
+
+				<a href="/app/layout/destino.html" target="_blank">Ir ha Destino</a>
+
+
+			_de ésta manera, las rutas relativas a la raiz, son más estables y responden sólo a la carpeta raíz, y no a la ubicación de archivos dentro de sub-carpetas dentro de la carpeta raíz	
+
+
+-->
+
+
+	<!--enlace externo-->
+
+	<a href="http://www.google.com" target="_parent">Ir ha Google</a>
+
+
+
+
+
+	
+</body>
+</html>

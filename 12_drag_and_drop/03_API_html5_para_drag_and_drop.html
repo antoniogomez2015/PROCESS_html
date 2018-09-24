@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drag and Drop</title>
+
+	<style type="text/css">
+		
+		body{
+			border: 0%;
+			padding: 0%;
+			margin: 0% auto;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+		}
+
+			.L1{
+				width: 30%;
+				height: 500px;
+				background-color: orange;
+				display: flex;
+				justify-content: space-between;
+			}
+
+				.L2{
+					width: 30%;
+					height: 250px;
+					background-color: red;
+				}
+
+		/*ejemplo alternativo*/
+		img{
+			width: 20%;
+			height: 20%;
+		}
+
+		#destino{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!--
+
+	_la API, del módulo de dag and drop, nos permitirá e y soltar elementos en el navegador a traés, de éste nuevo estandar html
+
+
+	_de ésta manera, podremos crear interfaces, configurables por el usuario, podremos hacer que productos sean arrastrables a un carro de compras, juegos, como rompecabezas, interactivos, otros
+
+	
+
+
+	Referencia:
+
+			Tutorial:
+
+				Curso de HTML5 API (13 videos) https://www.youtube.com/playlist?list=PLEB8E488D1C2D4C9F
+
+
+
+
+	Documentación Oficial:
+
+		https://www.w3schools.com/html/html5_draganddrop.asp
+
+
+			https://dev.w3.org/html5/spec-preview/dnd.html
+
+
+
+
+	API para Drag and Drop:
+	_______________________
+
+	_la API, html5, disponde de unos "objetos eventos", html5, en javascript, preconstruidos los cuáles, hacen de interface, éstos son: "DataTransfer"
+
+	_y son los encargados de brindarnos soportes para la operaciones de e y soltar
+
+
+
+
+	_el modo de acceder ha éste objeto es a través, del objeto  "event"
+
+	-->
+
+
+
+	<!--práctica-->
+
+
+	<!--contenedores de destino
+	<div id="destino1" class="L1" ondragenter="return enter(event)" ondragover="return enter(event)" ondrop="return enter(event)">		
+
+		
+		<div id="arrastable1" class="L2"  draggable="true" ondragstart="return empezar(event)" ondragend="return empezar(event)"></div>
+
+		<div id="arrastable2" class="L2" draggable="true" ondragstart="return empezar(event)" ondragend="return empezar(event)"></div>
+
+		<div id="arrastable3" class="L2" draggable="true" ondragstart="return empezar(event)" ondragend="return empezar(event)"></div>
+
+	</div>
+
+	<div id="destino2" class="L1" ondragenter="return enter(event)" ondragover="return enter(event)" ondrop="return enter(event)"></div>
+
+	<div id="destino3" class="L1" ondragenter="return enter(event)" ondragover="return enter(event)" ondrop="return enter(event)"></div>-->
+
+
+	<!--ejemplo alternativo de elemento arrastrable-->
+	<img src="../00_img_referencia/desktop.jpg" id="demo">
+
+	<!--ejemplo alternativo de elemento de destino-->
+	<div id="destino"></div>
+
+
+
+	<script type="text/javascript">
+
+		window.onload = function javascript(){
+
+			//API HTML5, a través, de la cuál, controlares los eventos y acciones de Drag and Dorp
+
+			//ahora declaramos la función "empezar", de los elementos arrastrables
+			/*function empezar(e){
+
+				//interface javascript, para la relación del evento mover
+				e.dataTransfer.effectAllowed = 'move';
+
+				//relacionamos el elemento html, con la api, javascrip y html5
+				e.dataTransfer.setData("Data", e.target.getAttribute('id'));
+
+				//así, como también, debemos de indicar la ubicación donde se ubicará la imágen arrastrada
+				e.dataTransfer.setDragImage(e.target, 0, 0);
+
+				//para luego hacer que la función nos devuelva un valor booleano para utilizar posteriormente
+				return true;
+			};*/
+
+
+			//seleccionamos el elemento html, que deseamos sea arrastrablr
+			var arrastrable = document.getElementById('demo');
+
+			//luego le indicamos a la imágen que esté a la escucha del evento "dragstart", y que ejecute la función en éste caso llamada "arrastrar"
+			arrastrable.addEventListener('dragstart', arrastrar, false);
+
+
+				//desarrollo de la función de arrastar elemento
+				function arrastrar(e){
+
+					//aquí seleccionamos el contenido a compartir con el elemento de destino
+					var codigo = "<img src'" + demo.getAttribute("src") + "'>";
+
+
+					//para luego relacionar la informaión del elemento html, arrastrable con la api, de drag and drop
+					e.dataTransfer.setData("Text", codigo);
+
+				};
+
+
+
+			//también, seleccionaremos el elemento de destino
+			var c_destino = document.getElementById('destino');
+
+			//ahora vamos ha indicarle al elemento de destino que esté atento a elemento arrastrables y a su vez, vamos resetear el comportamiento del navegador ante elemento arrastrables
+			c_destino.addEventListener('dragenter', function(e){
+
+					e.preventDefault();
+
+			}) false;
+
+
+			//también, debemos definir lo mismo para los demás estados ó eventos de la API, de Drag and Drop
+			c_destino.addEventListener('dragover', function(e){
+
+					e.preventDefault();
+
+			}) false;
+
+
+			//también, debemos definir lo mismo para los demás estados ó eventos de la API, de Drag and Drop, en éste caso con una variante de una llamada ha un función definida "soltado"
+			c_destino.addEventListener('dragover', soltado, false);
+
+
+
+				//desarrollo de la función de destino
+				function solado(e){
+
+					//primeramente debemos resetear el comportamiento de que tiene el navegador al soltar un objeto, para que así, el navegador no trate de abrir la imágen en grande ó trate de obtener la url, y demás comportamientos inesperado
+					e.preventDefault(e){
+
+						arrastrable.innerHTML = e.dataTransfer.getData("Text");
+					};
+
+				}
+		
+
+		}
+
+		
+
+	</script>
+	
+</body>
+</html>
