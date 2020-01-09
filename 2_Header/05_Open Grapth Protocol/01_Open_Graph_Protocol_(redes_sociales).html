@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+
+        Open Graph Protocol:
+        ____________________
+
+
+        El Open Graph es una tira de código que le especifica a las redes sociales y a los buscadores ciertos parametros de visualización al compartir un artículo
+
+        ¿Por qué se ven mal los artículos compartidos en redes sociales? 
+        
+        Porque la red no sabe interpretar cuál es el título del artículo, ni la imagen principal, ni el propio contenido de lo que se está compartiendo
+
+        Todo eso se define en el Open Graph o MetaTag 
+        
+        Al compartir un link en Facebook, Linkedin o Twitter 
+        
+        es importante que el artículo se vea bien y atractivo, para eso se debe definir la etiqueta "Meta" en la sección del código Head de la página
+
+        Open Graph son una serie de etiquetas que se añaden al código de la página 
+        
+        invisibles de cara al visitante de la web, que ayudan a Facebook y a otra redes sociales como Twitter, Linkedin y Google+ a identificar los elementos principales del artículo que se quiere compartir: 
+        
+
+            título, imagen, descripción, etc.
+
+
+
+
+
+        Referencia:
+
+            https://ogp.me/
+
+            https://www.flimper.com/blog/es/que-es-open-graph-y-como-se-hace
+        
+    -->
+
+
+        <!-- COMMON TAGS -->
+        <meta charset="utf-8">
+        <title>TÍTULO DEL ARTÍCULO</title>
+
+
+
+        <!-- Search Engine -->
+        <meta name="description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+        <meta name="image" content="LINK A LA IMAGEN DEL ARTÍCULO, DEBE TENER UN TAMAÑO DE 705 PÍXELES POR 368 PÍXELES">
+
+
+
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="TÍTULO DEL ARTÍCULO">
+        <meta itemprop="description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+        <meta itemprop="image" content="LINK A LA IMAGEN DEL ARTÍCULO">
+
+
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="TÍTULO DEL ARTÍCULO">
+        <meta name="twitter:description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+        <meta name="twitter:site" content="@USUARIO DE TWITTER">
+        <meta name="twitter:creator" content="@USUARIO DE TWITTER">
+        <meta name="twitter:image:src" content="LINK A LA IMAGEN DEL ARTÍCULO">
+
+
+
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="TÍTULO DEL ARTÍCULO">
+        <meta name="og:description" content="DESCRIPCIÓN DEL ARTÍCULO, MÁXIMO 155 CARACTERES">
+        <meta name="og:image" content="LINK A LA IMAGEN DEL ARTÍCULO">
+        <meta name="og:url" content="LINK AL ARTÍCULO">
+        <meta name="og:site_name" content="TÍTULO DEL ARTÍCULO">
+        <meta name="og:locale" content="en_US">
+        <meta name="og:type" content="article">
+
+
+
+        <!-- Open Graph - Article -->
+        <meta name="article:section" content="Social Media">
+        <meta name="article:author" content="NOMBRE DE LA EMPRESA">
+        <meta name="article:tag" content="Social Media">
+
+
+
+
+</body>
+</html>

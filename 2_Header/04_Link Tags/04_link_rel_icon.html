@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+
+        Link Rel="icon":
+        ________________
+
+        Casi todos los navegadores ya cuentan con un soporte extenso de diferentes formatos de imágenes para mostrar el favicon de una página 
+        
+        siendo Internet Explorer y Safari (los sospechosos de siempre) los que cuentan con menor soporte. Aquí la lista.
+
+
+
+            Edge: .ico, .png, .gif
+
+            Firefox: .ico, .png, .gif, .gif animado, .jpg, .png animado, .svg
+
+            Chrome: .ico, .png, .gif, .gif animado, .jpg
+
+            IE: .ico, .png, .gif
+
+            Opera: .ico, .png, .gif, .gif animado, .jpg, .png animado, .svg
+
+            Safari: .ico, .png, .gif, .jpg
+
+
+
+        Como verás casi siempre el factor común es ico, png y gif. 
+        
+        Resulta que este último no es precisamente muy bueno haciendo transparencias ni imágenes de calidad 
+        
+        lo cual nos deja con sólo dos tipos ideales para este propósito; ico y png.
+
+        Los íconos pueden tener tamaños de: 
+        
+
+            16×16, 32×32, 48×48, o 64×64 píxeles 
+           
+            
+        y 
+        
+            8 bits, 24 bits o 32 bits 
+            
+            
+        de profundidad de color. 
+        
+        Personalmente he usado png de dimensiones enormes y no proporcionales (a manera de experimento) 
+        
+        y el navegador los ha renderizado sin problemas lo que convierte este formato en el ideal 
+
+        Puedes usar ambos formatos a la vez y también los navegadores intentarán obtenerlo de la raíz del sitio por defecto. 
+        
+        Este proceso se hace siguiendo este algoritmo.
+
+        Si vínculos para ambos favicons en formato PNG y ICO son encontrados los navegadores compatibles con PNG seleccionan que formato y tamaño usar
+
+        
+
+
+        
+        Referencia:
+
+
+            https://www.mclibre.org/consultar/htmlcss/html/html-favicon.html
+
+
+            https://es.stackoverflow.com/questions/22067/favicon-formato-ico-o-png-y-qu%C3%A9-rel
+        
+            
+            
+
+    -->
+
+            
+
+			<link rel="icon" href="favicon.png" type="image/x-icon"/>
+
+
+        
+
+            
+<!--
+
+        Desde que apareció el uso de PNG, no se incluyen múltiples resoluciones, habría que escribirlos manualmente:
+-->
+
+            <link rel="icon" href="favicon-16.png" sizes="16x16">
+
+
+            <link rel="icon" href="favicon-32.png" sizes="32x32">
+
+
+            <link rel="icon" href="favicon-48.png" sizes="48x48">
+
+
+            <link rel="icon" href="favicon-64.png" sizes="64x64">
+
+
+            <link rel="icon" href="favicon-128.png" sizes="128x128">
+
+
+<!--
+
+
+        En cuanto a los “Touch icons” son favicons para dispositivos móviles y tablets iOS 
+        
+        añade automáticamente algunos efectos visuales, esto para coordinar con los íconos incorporados a la pantalla de inicio 
+        
+        (como lo hace con los íconos de aplicaciones). En concreto, el IOS añade
+
+
+-->
+
+            <link rel="apple-touch-icon-precomposed"        href="apple-touch-icon-precomposed.png">
+
+
+</body>
+</html>

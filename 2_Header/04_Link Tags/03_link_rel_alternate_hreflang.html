@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+
+        link rel="alternate" hreflang:
+        ______________________________
+
+        "Contenido de páginas por idiomas y subdominios"
+
+        El atributo rel="alternate" hreflang="x" se utiliza para comunicar a los motores de búsqueda el idioma de su contenido 
+        
+        y la región geográfica para la que está destinado. 
+        
+        Les ayuda a decidir qué versión mostrar a quién. 
+        
+        Es particularmente útil si tiene el sitio web en varios idiomas. 
+        
+        En este artículo explicamos cómo utilizar este atributo del tag <link>.
+
+
+        Si tiene el sitio web disponible en múltiples versiones lingüísticas, cada visitante debería ver la versión correcta correspondiente al idioma en el que busca. Para ayudar a los motores de búsqueda a mostrar la versión correcta debería utilizar el atributo hreflang indicando así el idioma de contenido y eventualmente la región objetiva.
+
+
+
+        Ejemplo:
+        ________
+
+        Imagínese esta situación: tiene el sitio web en dos idiomas, inglés y español 
+        
+        Ahora necesita que los motores de búsqueda muestren la versión correcta 
+        
+        Para este propósito utilizará el atributo hreflang con el valor en y es
+
+        Tomemos otro ejemplo: tiene el sitio web en español pero en dos versiones diferentes para los usuarios españoles y mexicanos 
+        
+        Para aclarar a los motores de búsqueda qué versión mostrar, tiene que combinar las definiciones del idoma y de la región: 
+        
+        es-es para la versión orientada a España y es-mx para la versión orientada a México.
+
+        La ventaja adicional de la utilización del atributo hreflang es la prevención de problemas con el contenido duplicado 
+        
+        sobre todo en caso de múltiples versiones en un mismo idioma como en el ejemplo de arriba (con el español de España y de México) 
+        
+        El contenido puede ser muy similar, por lo que hay que distinguir claramente las dos versiones.
+
+
+        Expresión:
+        __________
+
+        Las partes diferentes del atributo hreflang:
+
+            Ahora analizaremos el atributo hreflang por partes. Un ejemplo:
+
+    -->
+
+            <link rel="alternate" hreflang="es" href="https://www.ejemplo.es/" />
+
+    <!--
+
+
+        Vamos paso a paso:
+
+            La parte link rel="alternate" dice que existe una relación entre esta página y alguna otra 
+            
+            En este artículo nos interesa el atributo hreflang, pero existen muchas otras relaciones como paginación, páginas AMP, o páginas optimizadas para móviles.
+
+
+            La parte hreflang="es" determina el público objetivo indicando el idioma o la combinación del idoma y de la región.
+            
+            
+            La parte href contiene la URL de la página mencionada en la previa parte.
+
+
+
+
+        Implementación:
+
+            Hay 3 maneras de implementar el atributo hreflang:
+
+            En la sección <head> de la página HTML
+            
+            En el encabezado HTTP
+
+            En el archivo sitemap XML
+
+            Habitualmente lo más simple es incluir el atributo en la sección <head> de la página HTML
+
+            Al utilizar el atributo hreflang no solamente determina el público objetivo del contenido 
+            
+            pero también describe las versiones localizadas de la página. 
+            
+            Imagínese que la página está disponible en español, inglés y francés, así la definición completa sería la siguiente y estaría presente en todas las variantes de la página
+
+
+
+
+        
+        Referencia:
+
+
+            https://www.contentking.es/academia/hreflang/
+
+
+            https://support.google.com/webmasters/answer/189077?hl=es-419
+        
+            
+            
+
+    -->
+
+            <link rel="alternate" hreflang="es-ec" href="https://www.ejemplo.es/ec/" />
+
+
+            <link rel="alternate" hreflang="es-mx" href="https://www.ejemplo.es/mx/" />
+
+
+            <link rel="alternate" hreflang="es-es" href="https://www.ejemplo.es/" />
+
+
+            <link rel="alternate" hreflang="x-default" href="https://www.ejemplo.es/" />
+
+
+<!--
+
+        Versiones del Sitio Web:
+
+            Haga referencia a la página misma y a sus versiones traducidas
+
+
+            El atributo hreflang tiene que determinar el idioma y la región del público objetivo de la página misma y de todas sus variantes.
+
+            Tomemos la página 
+
+            
+                https://www.ejemplo.com/ 
+            
+
+            del ejemplo de arriba - sus versiones traducidas son: 
+
+            
+                https://www.ejemplo.com/ca/ 
+                
+            y 
+            
+                https://www.ejemplo.com/uk/.
+
+
+
+            Utilice las referencias bidireccionales del atributo hreflang
+
+            Todas las referencias del atributo hreflang tienen que ser bidireccionales. 
+            
+            Esto significa que cada variante de la página hace referencia a todas las otras variantes.
+
+
+
+            
+-->
+
+
+
+
+</body>
+</html>
