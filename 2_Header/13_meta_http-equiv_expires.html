@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+
+        http-equiv Expires:
+        ___________________
+
+
+        Es posible que no se quiera prohibir el almacenamiento temporal en caché de forma absoluta 
+        
+        En este caso se puede usar el atributo “http-equiv” para definir una fecha de expiración para los datos HTML solicitados 
+
+        
+
+
+        
+        Referencia:
+        
+            https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/los-meta-tags-mas-importantes-y-su-funcion/
+            
+
+            https://www.w3schools.com/tags/tag_meta.asp
+
+
+            https://gist.github.com/lancejpollard/1978404
+
+
+            https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/los-meta-tags-mas-importantes-y-su-funcion/
+            
+
+    -->
+
+            <meta http-equiv="expires" content="tiempo de expiración en segundos"/>
+
+    <!--
+
+        Así es posible asignar a las páginas HTML la fecha de caducidad que se deseen 
+        
+        Una vez se supera esta fecha, el navegador tiene que cargar el documento HTML desde la página de origen 
+        
+        Pero si tiene que acudir siempre a la página original entonces se introduce un punto de caducidad de 0 segundos 
+        
+        En caso de que se quiera indicar un período de 12 horas, se introducen 43.200 segundos
+
+    -->
+
+        <meta http-equiv="expires" content="0"/>
+
+        <meta http-equiv="expires" content="43200"/>
+
+    <!--
+
+        También es posible definir períodos de tiempo o fechas concretas, siempre en formato internacional y según el GMT (Greenwich Mean Time):
+    -->
+
+        <meta http-equiv="expires" content="Sat, 07 Feb 2016 00:00:00 GMT"/>
+
+</body>
+</html>

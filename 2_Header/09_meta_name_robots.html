@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+
+        Name="Author" Name="copyright":
+        _______________________________
+
+        Una de las principales funciones de los meta tags es proporcionar instrucciones para la indexación a los crawlers (robots o googlebots) 
+        Esto se logra con la etiqueta meta “robots” 
+        
+        Con los siguientes meta tags es posible estipular si una página será indexada y, en consecuencia, si estará disponible para la búsqueda 
+        
+        También se puede establecer si los robots han de seguir los enlaces salientes o si, por el contrario, han de ignorarlos 
+        
+        Esta información se cuenta entre los metadatos más relevantes para el SEO
+
+
+
+        
+        Referencia:
+        
+            https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/los-meta-tags-mas-importantes-y-su-funcion/
+            
+
+            https://www.w3schools.com/tags/tag_meta.asp
+
+
+            https://gist.github.com/lancejpollard/1978404
+
+
+            https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/los-meta-tags-mas-importantes-y-su-funcion/
+            
+
+            
+        ej:
+
+    -->
+
+    <!--
+
+        
+        Index
+        _____
+
+        Esta directriz permite al robot de búsqueda la indexación de una página de HTML 
+        
+        algo innecesario si se piensa que la indexación forma parte de su actividad habitual, así:
+                        
+    -->
+    
+    
+            <meta name="robots" content="index"/>
+
+
+    <!--
+
+
+        Noindex:
+        ________
+
+        Se tiene que indicar expresamente si una página no debe ser incluida en el índice. Este tag prohíbe al buscador transferir contenidos de una página HTML a su base de datos:
+    -->
+
+            <meta name="robots" content="noindex"/>
+
+    <!--
+
+        El atributo “robots” se dirige a todos los buscadores, y “noindex” indica que no se permite la indexación 
+        
+        Si queremos impedirle el proceso solo a un buscador, podemos indicarlo con un atributo alternativo como, por ejemplo, “googlebot”.
+
+
+
+        Follow:
+        _______
+
+        El comportamiento estándar de los motores de búsqueda consiste en recorrer los enlaces que encuentra en una página de HTML a no ser que se les indique lo contrario 
+        
+        Esta información se puede incluir en las metaetiquetas, aunque no es necesario:
+    -->
+
+
+            <meta name="robots" content="follow"/>
+    
+    <!--
+
+        Nofollow:
+        _________
+
+        Si se quiere impedir que un robot de búsqueda alcance determinadas subpáginas de un sitio o rastree los enlaces en otro dominio se añade:
+    -->
+
+            <meta name="robots" content="nofollow"/>
+
+    <!--
+
+        El robot ignora, así, los enlaces por completo, pero no el contenido de la página, que sí será transferido a la base de datos del buscador.
+
+        Los meta tags Index/Noindex y Follow/Nofollow se pueden usar solos o combinados 
+        
+        Se puede, por ejemplo, determinar que una página sea indexada pero que los links sean ignorados, así como permitir o impedir ambas acciones a los robots
+    -->
+
+            <meta name="robots" content="index,nofollow" />
+
+            <meta name="robots" content="index,follow" />
+
+            <meta name="robots" content="noindex,nofollow" />
+
+
+</body>
+</html>
