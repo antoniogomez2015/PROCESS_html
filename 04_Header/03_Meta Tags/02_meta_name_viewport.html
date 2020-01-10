@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+
+        Meta Name="viewport":
+        _____________________
+
+
+        Ésta es la etiqueta meta viewport, introducida por Apple, luego adoptada y desarrollada más allá por otros.
+
+        la cuál, nos permitirá condiciona e indicar la forma como se verá el contenido en diferentes dispositivos y escalas de visualización
+
+        de ésta manera, éste meta tag, se ve de la siguiente manera en su forma básica
+        :
+    -->
+        
+            <meta name="viewport" content="">
+
+    <!--
+
+        Dentro de content="" puedes ingresar una gran cantidad de valores delimitados por comas, pero vamos a concentrarnos en los fundamentales por ahora.
+
+        Por ejemplo, si tu diseño móvil está trazado intencionalmente a 320px, tu puedes especificar el ancho del viewport:
+
+    -->
+        
+            <meta name="viewport" content="width=320">
+
+    <!--
+
+        Para layouts flexibles es más práctico basar el ancho de tu viewport en el dispositivo en cuestión, así que para empatar el ancho de tu layout con el del dispositivo ingresarías:
+
+    -->
+        
+            <meta name="viewport" content="width=device-width">
+
+    <!--
+
+        Para estar extra seguro de que tu layout se mostrará como lo planeaste, puedes también fijar el nivel del zoom. Ésto, por ejemplo:
+
+    -->
+
+            <meta name="viewport" content="initial-scale=1">
+
+    <!--
+
+        ..asegurará que al abrir, tu layout se mostrará correctamente a una escala de 1:1. Ningún zoom será aplicado. Podrías incluso ir más allá y prevenir cualquier zoom por el usuario:
+
+    -->
+
+            <meta name="viewport" content="maximum-scale=1">
+
+    <!--
+
+        Nota: Antes de aplicar el parámetro de escala-máxima (maximum-scale), considera si realmente debes prevenir que tus usuarios hagan zoom-in. ¿Pueden leer todo tan bien como se pueda?
+
+        Usar la etiqueta viewport meta de manera incorrecta puede dificultar a los usuarios con problemas visuales al accesar a tu sitio.
+
+
+            - The Accessibility Project
+
+
+        Ponlo Todo Junto éstos valores para conseguir una gran configuración por default con qué trabajar:
+
+    -->
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        
+    <!--
+
+        
+
+
+
+
+
+        Referencia:
+        
+            https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag
+
+
+            https://webdesign.tutsplus.com/es/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972
+
+
+            https://www.w3schools.com/css/css_rwd_viewport.asp
+            
+            
+
+            
+        ej:
+
+    -->
+
+  
+
+
+
+</body>
+</html>
